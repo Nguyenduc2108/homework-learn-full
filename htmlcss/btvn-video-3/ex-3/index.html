@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form info - Video 3</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <form action="" class="form">
+            <div class="form-group">
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" id="username" />
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" id="password" />
+            </div>
+            <div class="form-group">
+                <label for="city" class="form-label">City of Employment:</label>
+                <input type="text" id="city" />
+            </div>
+
+            <div class="form-group form-select">
+                <label for="web-server" class="form-label">Web server:</label>
+                <div class="form-wrap">
+                    <select name="choose-web" id="web-server" class="select-choose">
+                        <option>— Choose a server —</option>
+                        <option value="nginx">Nginx</option>
+                        <option value="iis">IIS</option>
+                        <option value="chrome">chrome</option>
+                    </select>
+                    <span class="arrow-down">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                </div>
+            </div>
+            <!-- End select -->
+
+            <div class="form-group form-role">
+                <label class="form-label">Please specify your role:</label>
+                <div class="role-group">
+                    <label>
+                        <input type="radio" name="role" value="Admin" hidden />
+                        Admin
+                    </label>
+                    <label>
+                        <input type="radio" name="role" value="Engineer" hidden />
+                        Engineer
+                    </label>
+                    <label>
+                        <input type="radio" name="role" value="Manager" hidden />
+                        Manager
+                    </label>
+                    <label>
+                        <input type="radio" name="role" value="Guest" hidden />
+                        Guest
+                    </label>
+                </div>
+            </div>
+            <!-- End .form-role -->
+
+            <div class="form-group form-sign-on">
+                <label class="form-label">Single sign-on to the following:</label>
+                <div class="sign-on-group">
+                    <label>
+                        <input type="checkbox" name="sign-on" value="Mail" hidden />
+                        Mail
+                    </label>
+                    <label>
+                        <input type="checkbox" name="sign-on" value="Payroll" hidden />
+                        Payroll
+                    </label>
+                    <label>
+                        <input type="checkbox" name="sign-on" value="Self-service" hidden />
+                        Self-service
+                    </label>
+                </div>
+            </div>
+            <!-- End .sign-on-group -->
+
+            <div class="form-action">
+                <button class="btn-login">Login</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+        </form>
+    </body>
+</html>

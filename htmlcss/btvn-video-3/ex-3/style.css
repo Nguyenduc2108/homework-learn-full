@@ -1,0 +1,169 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+label {
+    font-size: 14px;
+}
+
+.form-group + .form-group {
+    margin-top: 10px;
+}
+
+.form-label {
+    display: inline-block;
+    width: 100px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 2px 4px;
+    border: 1px solid #98a1a6;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #007bff;
+}
+
+.form-select {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-wrap {
+    position: relative;
+}
+
+.arrow-down {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    padding: 2px 3px;
+    border-radius: 2px;
+    color: #fff;
+    background: #2187f3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+}
+
+.form-role,
+.form-sign-on {
+    display: flex;
+    align-items: center;
+}
+
+.role-group,
+.sign-on-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.role-group label,
+.sign-on-group label {
+    position: relative;
+    padding-left: 22px;
+}
+
+.role-group label::before,
+.role-group label::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.role-group label::before {
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #98a1a6;
+}
+
+.role-group label::after {
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    background: #f38a21;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.role-group label:has(:checked)::before {
+    background: #f38a21;
+    border-color: #f38a21;
+}
+
+.role-group label:has(:checked)::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-on-group label::before,
+.sign-on-group label::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+}
+
+.sign-on-group label::before {
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border: 1px solid #98a1a6;
+    border-radius: 2px;
+}
+
+.sign-on-group label::after {
+    top: 2px;
+    left: 4px;
+    width: 4px;
+    height: 8px;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+    rotate: -135deg;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-on-group label:has(:checked)::before {
+    background: #f38a21;
+    border-color: #f38a21;
+}
+
+.sign-on-group label:has(:checked)::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-action {
+    margin: 12px 0 0 104px;
+}
+
+.form-action button {
+    border: 1px solid #2187f3;
+    border-radius: 2px;
+    outline: none;
+    background: #edf0f1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form-action button:hover {
+    color: #fff;
+    background: #2187f3;
+}
