@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Exercise 1 */
+.footer {
+    margin: 10px 10px 30px 10px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: #fff;
+    background: #334455;
+}
+
+.footer:hover .input {
+    background: #ddd;
+}
+
+.footer:hover .input::placeholder {
+    color: #ffa500;
+}
+
+.footer:hover .btn {
+    color: #fff;
+    background: #ffa500;
+}
+
+.heading {
+    font-size: 24px;
+}
+
+.desc {
+    margin-top: 10px;
+    max-width: 600px;
+    font-size: 14px;
+}
+
+.hight-light {
+    color: #ffa500;
+}
+
+.form {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+}
+
+.btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 2px;
+    background: #f8db35;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Exercise 2 */
+.wrap {
+    position: relative;
+    width: 500px;
+    margin: 0 20px 40px 0;
+}
+.quote {
+    padding: 20px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.open-quote,
+.close-quote {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    font-size: 60px;
+    text-align: right;
+}
+
+.open-quote {
+    top: -10px;
+    left: -10px;
+}
+
+.close-quote {
+    right: -10px;
+    bottom: -20px;
+}
+
+/* Exercise 3 */
+.list {
+    list-style: none;
+}
+
+.item {
+    position: relative;
+    padding: 2px 25px;
+}
+
+.item::before {
+    content: "😎";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+/* Exercise 4 */
+h3 {
+    font-size: 24px;
+    color: #4f5a75;
+}
+
+p {
+    color: #828597;
+}
+
+code {
+    padding: 2px;
+    border-radius: 6px;
+    background: #e9ecfd;
+}
+
+a {
+    border-bottom: 1.5px solid #4b8ed4;
+    color: #4b8ed4;
+    text-decoration: none;
+}
+
+.content {
+    margin-top: 40px;
+    padding: 10px 30px 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.content p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.content a,
+.content .arrow {
+    font-weight: 600;
+}
