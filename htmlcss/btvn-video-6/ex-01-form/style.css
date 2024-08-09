@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-font: "Lato", sans-serif;
+    --sub-font: "Lobster", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+
+.app {
+    width: 500px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: var(--sub-font);
+}
+
+.desc {
+    margin-top: 30px;
+}
+
+.hight-light {
+    color: #eb4b3f;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group + .form-group {
+    margin-top: 20px;
+}
+
+.form-group .desc {
+    position: absolute;
+    top: -80px;
+    left: 30px;
+    z-index: 1;
+    padding: 12px;
+    color: #f5f5f5;
+    background: #333;
+    font-size: 1rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-group .desc::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    border-width: 8px 12px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
+.form-group:hover .desc {
+    opacity: 1;
+    visibility: visible;
+}
+
+.desc-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 15px 20px;
+    color: #f5f5f5;
+    background: #ccc;
+}
+
+.form-group:hover .desc-picture {
+    background: #333;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.form-input,
+.form-select {
+    height: 50px;
+    padding: 0 16px 0 70px;
+}
+
+.form-input:focus ~ .icons .icons-star,
+.form-input:active ~ .icons .icons-star,
+.form-textarea:focus ~ .icons .icons-star,
+.form-textarea:active ~ .icons .icons-star {
+    display: none;
+}
+
+.form-input:focus ~ .icons .icons-close,
+.form-input:active ~ .icons .icons-close,
+.form-textarea:focus ~ .icons .icons-close,
+.form-textarea:active ~ .icons .icons-close {
+    display: block;
+}
+
+.form-group:hover .form-input {
+    border-color: #333;
+}
+
+.form-select {
+    appearance: none;
+}
+
+.form-textarea {
+    height: 240px;
+    padding: 16px 70px;
+    resize: none;
+}
+
+.desc-picture.textarea-picture {
+    height: 98%;
+}
+
+.icons i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.form-group .form-textarea ~ .icons i {
+    top: 24px;
+}
+
+.form-group:hover .icons i {
+    color: #333;
+}
+
+.icons .icons-star,
+.icons .icons-close {
+    right: 17px;
+    font-size: 1rem;
+}
+
+.icons-close {
+    display: none;
+}
+
+.form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 34px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.label::before,
+.label::after {
+    position: absolute;
+    content: "";
+}
+
+.label::before {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ccc;
+}
+
+.label::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 14px;
+    height: 7px;
+    border-left: 3px solid #333;
+    border-bottom: 3px solid #333;
+    transform: rotate(-45deg);
+    display: none;
+}
+
+.label:has(:checked)::after {
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 28px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #ea3f33;
+    cursor: pointer;
+}

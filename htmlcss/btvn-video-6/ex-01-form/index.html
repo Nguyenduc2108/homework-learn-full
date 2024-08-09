@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Btvn - Form - Video 6</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- Embed fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lobster&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Style -->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="app">
+            <h1 class="heading">Hey there</h1>
+            <p class="desc">
+                <span class="hight-light">We'd like to hear from you.</span> Send us your message or
+                just say hy with our contact form or directly via phone, we love to chat.
+            </p>
+
+            <form action="" class="form">
+                <div class="form-group">
+                    <div class="desc">Enter your name</div>
+                    <div class="desc-picture">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input type="text" class="form-input" placeholder="Your name" />
+                    <div class="icons">
+                        <i class="fa-solid fa-star icons-star"></i>
+                        <i class="fa-solid fa-xmark icons-close"></i>
+                    </div>
+                </div>
+                <!-- End .form-group 1 -->
+
+                <div class="form-group">
+                    <div class="desc">Enter your email</div>
+                    <div class="desc-picture">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <input type="email" class="form-input" placeholder="your@domain.com" />
+                    <div class="icons">
+                        <i class="fa-solid fa-star icons-star"></i>
+                        <i class="fa-solid fa-xmark icons-close"></i>
+                    </div>
+                </div>
+                <!-- End .form-group 2 -->
+
+                <div class="form-group">
+                    <div class="desc">Enter your number</div>
+                    <div class="desc-picture">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <input type="number" class="form-input" placeholder="+44 00 123" />
+                </div>
+                <!-- End .form-group 3 -->
+
+                <div class="form-group">
+                    <div class="desc">Enter your subject</div>
+                    <div class="desc-picture">
+                        <i class="fa-solid fa-folder"></i>
+                    </div>
+                    <select class="form-select">
+                        <option>Subject</option>
+                        <option value="js">Javascript</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </select>
+                    <div class="icons">
+                        <i class="fa-solid fa-sort"></i>
+                        <i class="fa-solid fa-xmark icons-close"></i>
+                    </div>
+                </div>
+                <!-- End .form-group 4 -->
+
+                <div class="form-group">
+                    <div class="desc">Enter your message</div>
+                    <div class="desc-picture textarea-picture">
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <textarea class="form-textarea">Message</textarea>
+                    <div class="icons">
+                        <i class="fa-solid fa-star icons-star"></i>
+                        <i class="fa-solid fa-xmark icons-close"></i>
+                    </div>
+                </div>
+                <!-- End .form-group 5 -->
+
+                <div class="form-footer">
+                    <label class="label">
+                        <input type="checkbox" hidden />
+                        Send me a copy of this message
+                    </label>
+                    <button class="btn">SEND</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

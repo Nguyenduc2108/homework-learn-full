@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.service {
+    width: 1200px;
+    max-width: 100%;
+    margin: 40px auto;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-red:hover {
+    border: 2px solid red;
+}
+
+.item-green:hover {
+    border: 2px solid green;
+}
+
+.item-orange:hover {
+    border: 2px solid orange;
+}
+
+.item-blue:hover {
+    border: 2px solid blue;
+}
+
+.item-violet:hover {
+    border: 2px solid violet;
+}
+
+.item-pink:hover {
+    border: 2px solid pink;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    column-gap: 16px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+}
+
+.item-red .icon {
+    background: linear-gradient(45deg, #f00, #ff0);
+}
+
+.item-green .icon {
+    background: linear-gradient(45deg, #0f0, #0ff);
+}
+
+.item-orange .icon {
+    background: linear-gradient(45deg, #f90, #ff0);
+}
+
+.item-blue .icon {
+    background: linear-gradient(45deg, #00f, #0ff);
+}
+
+.item-violet .icon {
+    background: linear-gradient(45deg, #f0f, #ff0);
+}
+
+.item-pink .icon {
+    background: linear-gradient(45deg, #f0f, #f0f);
+}
+
+.heading {
+    display: inline-block;
+    font-size: 24px;
+    color: #000;
+    word-break: break-all;
+    text-decoration: none;
+}
+
+.heading span {
+    display: block;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.desc {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.link {
+    margin-top: auto;
+    color: #3068eb;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
