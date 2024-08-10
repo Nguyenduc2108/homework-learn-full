@@ -93,6 +93,7 @@ a {
     visibility: hidden;
     transition: 0.2s;
     transition-property: padding, opacity, visibility;
+    overflow: hidden;
 }
 
 .checkbox-arrow:not(:checked) ~ .form {
@@ -100,7 +101,12 @@ a {
     opacity: 1;
     visibility: visible;
     transition-property: width, opacity, visibility;
+    overflow: hidden;
 }
+
+/* .checkbox-arrow:not(:checked) ~ .form * {
+    height: auto;
+} */
 
 .heading {
     font-size: 32px;
