@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #54a3d5;
+    --border-color: #ccc;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrap {
+    width: 1200px;
+    max-width: 100%;
+    margin: 40px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--border-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu > li {
+    position: relative;
+    border-right: 1px solid var(--border-color);
+}
+
+.menu .link,
+.link-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    gap: 10px;
+    margin: 8px;
+    padding: 0 20px;
+    color: var(--text-color);
+}
+
+.menu > li:hover > a,
+.link-contact:hover {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.menu > li a > i {
+    font-size: 14px;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    z-index: 1;
+    min-width: 240px;
+    border-radius: 2px;
+    background: #fff;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.5));
+    display: none;
+}
+
+.menu > li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 0;
+    z-index: 1;
+    width: 70%;
+    height: 16px;
+}
+
+.sub-menu::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 28px;
+    border: 8px solid;
+    border-color: transparent transparent #fff transparent;
+    z-index: -1;
+}
+
+.sub-menu li + li {
+    border-top: 1px solid var(--border-color);
+}
+
+.sub-menu li:hover {
+    border-color: var(--primary-color);
+}
+
+.sub-menu a {
+    display: block;
+    padding: 16px 32px;
+    color: var(--text-color);
+}
+
+.sub-menu li:hover a {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.sub-menu a i {
+    margin-right: 8px;
+}
+
+.menu-contact {
+    border-left: 1px solid var(--border-color);
+}
