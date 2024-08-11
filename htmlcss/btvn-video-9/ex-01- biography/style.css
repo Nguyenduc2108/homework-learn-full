@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font: "Space Grotesk", sans-serif;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+main {
+    width: 1200px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.biography {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.item {
+    display: flex;
+    gap: 20px;
+}
+
+.item + .item {
+    margin-top: 20px;
+}
+
+.content {
+    width: 310px;
+    padding: 0 10px 40px 0;
+    text-align: right;
+    transition: transform 0.5s;
+}
+
+.content .heading {
+    margin-top: -6px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+}
+
+.content .desc {
+    margin-top: 16px;
+    line-height: 1.8;
+}
+
+.content .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    border-radius: 99px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.dot-line {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    margin-top: 6px;
+    border-radius: 50%;
+    outline: 10px solid rgba(0, 0, 0, 0.1);
+    background: green;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dot-line::after {
+    content: "";
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 1px;
+    height: 160px;
+    background: #ccc;
+}
+
+.date {
+    transition: transform 0.5s;
+}
+
+.item:hover .date {
+    transform: translateX(-170%);
+}
+
+.item:hover .content {
+    text-align: left;
+    transform: translateX(120%);
+}
+
+.item:hover .btn {
+    background: #a26f5a;
+    color: #fff;
+}
+
+.media {
+    position: relative;
+    padding-left: 120px;
+}
+
+.images {
+    width: 360px;
+}
+
+.images .img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.images .sub-img {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 240px;
+}
+
+.images .sub-img img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.intro {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 30px 40px 0;
+    color: #fff;
+    background: #465daf;
+}
+
+.intro .title {
+    color: transparent;
+    background: url("https://images.unsplash.com/photo-1722544078565-963a7e917ab7?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+        no-repeat center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 60px;
+    font-weight: 600;
+}

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    user-select: none;
+}
+
+.contact {
+    width: 1200px;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.head {
+    text-align: center;
+}
+
+.heading {
+    font-size: 32px;
+    color: #333;
+}
+
+.desc {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.form {
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    column-gap: 30px;
+}
+
+.row + .row {
+    margin-top: 30px;
+}
+
+.form-group {
+    position: relative;
+    width: 50%;
+}
+
+.label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #6d6d6d;
+    padding: 2px 4px;
+    transition: 0.3s;
+    transition-property: top, left, font-size;
+}
+
+.input:focus + .label,
+.textarea:focus + .label-textarea,
+.input:not(:placeholder-shown) + .label,
+.textarea:not(:placeholder-shown) + .label-textarea {
+    top: 20%;
+    left: 14px;
+    font-size: 14px;
+}
+
+.input,
+.select,
+.textarea {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+    border-color: #4c77d8;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.select {
+    color: #6d6d6d;
+    appearance: none;
+}
+
+.arrow-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.select:focus + .arrow-icon {
+    color: #4c77d8;
+}
+
+.form-group.w-full {
+    width: 100%;
+}
+
+.textarea {
+    height: 160px;
+    margin-top: 30px;
+}
+
+.label-textarea {
+    top: 30%;
+}
+
+.form-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn {
+    padding: 16px 24px;
+    border: none;
+    outline: none;
+    border-radius: 99px;
+    color: #fff;
+    background: #4c77d8;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

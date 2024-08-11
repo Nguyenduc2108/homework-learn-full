@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Btvn - Form - Video 9</title>
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Style -->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <section class="contact">
+            <div class="head">
+                <h1 class="heading">This is the heading 1</h1>
+                <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, blanditiis?
+                </p>
+            </div>
+
+            <form action="" class="form">
+                <div class="row">
+                    <div class="form-group">
+                        <input type="text" id="first-name" class="input" placeholder="First Name" />
+                        <label for="first-name" class="label">First Name *</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="last-name" class="input" placeholder="Last Name" />
+                        <label for="last-name" class="label">Last Name *</label>
+                    </div>
+                </div>
+                <!-- End .row 1-->
+
+                <div class="row">
+                    <div class="form-group">
+                        <input type="email" id="email" class="input" placeholder="Email" />
+                        <label for="email" class="label">Email *</label>
+                    </div>
+                    <div class="form-group">
+                        <select class="select">
+                            <option value="sales">Sales</option>
+                            <option value="support">Support</option>
+                            <option value="marketing">Marketing</option>
+                        </select>
+                        <div class="arrow-icon"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
+                </div>
+                <!-- End .row 2-->
+
+                <div class="form-group w-full">
+                    <textarea
+                        placeholder="Message"
+                        name="message"
+                        id="message"
+                        class="textarea"
+                    ></textarea>
+                    <label for="message" class="label label-textarea">Message *</label>
+                </div>
+
+                <div class="form-footer">
+                    <button class="btn">Send message</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
