@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background: #33b1f7;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg {
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    border-bottom-right-radius: 100%;
+    background: #fff;
+    transition: 0.2s;
+    transition-property: width, height, border-bottom-right-radius;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+    transition-property: opacity, visibility;
+}
+
+.menu li + li {
+    margin-top: 1rem;
+}
+
+.menu a {
+    display: inline-block;
+    min-width: 200px;
+    padding: 0.4rem 4rem;
+    color: #33b1f7;
+    font-weight: 600;
+}
+
+.menu a:focus {
+    background: #ccc;
+    color: #000;
+}
+
+.open {
+    position: absolute;
+    top: 1.75rem;
+    left: 1.75rem;
+    z-index: 2;
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.open > span {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    background: #33b1f7;
+}
+
+.open > span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.open > span:last-child {
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+input:checked ~ .open {
+    transform: rotate(180deg);
+}
+
+input:checked ~ .open > span:first-child {
+    width: 20px;
+    transform-origin: right bottom;
+    transform: translate(10px, 11px) rotate(45deg);
+}
+
+input:checked ~ .open > span:last-child {
+    width: 20px;
+    transform-origin: right top;
+    transform: translate(10px, calc(-100% - 11px)) rotate(-45deg);
+}
+
+input:checked ~ .bg {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 0;
+}
+
+input:checked ~ .bg .menu {
+    opacity: 1;
+    visibility: visible;
+}

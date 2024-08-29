@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+.tab ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab ul li + li {
+    border-left: 1px solid #ccc;
+}
+
+.tab label {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 60px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.tab label:hover,
+.tab label:focus {
+    background: #f1f1f1;
+}
+
+section {
+    perspective: 2000px;
+    perspective-origin: top;
+}
+
+.content {
+    display: none;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    overflow: auto;
+    transform-origin: top;
+    transition: 0.3s;
+    transition-property: opacity, visibility, transform;
+    animation: flip 1s;
+}
+
+#radio-1:checked ~ section .content.content-1,
+#radio-2:checked ~ section .content.content-2,
+#radio-3:checked ~ section .content.content-3,
+#radio-4:checked ~ section .content.content-4 {
+    transition-delay: 0.4s;
+    display: block;
+}
+
+#radio-1:checked ~ section .content.content-1 p,
+#radio-2:checked ~ section .content.content-2 p,
+#radio-3:checked ~ section .content.content-3 p,
+#radio-4:checked ~ section .content.content-4 p {
+    width: 110%;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(-90deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
