@@ -1,0 +1,121 @@
+/* PC medium */
+@media (min-width: 1380px) {
+    .app {
+        position: fixed;
+    }
+    .container {
+        max-width: 1320px;
+    }
+
+    .wrapper {
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .landing-info {
+        width: 50%;
+        flex-shrink: 0;
+    }
+
+    .desc {
+        display: block;
+        width: 384px;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .form-wrap {
+        margin: -190px -150px;
+    }
+
+    .form {
+        position: relative;
+    }
+
+    .rocket {
+        position: absolute;
+        top: -70px;
+        left: -80px;
+        display: block;
+    }
+
+    .form-login {
+        height: 100%;
+        transform: translateX(100%);
+    }
+
+    .form-register {
+        transform: translateX(0);
+    }
+}
+
+/* PC large */
+@media (min-width: 1499px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 1420px;
+    }
+
+    .form-wrap {
+        margin: -120px -150px;
+    }
+
+    .landing-decoration {
+        width: 64%;
+        height: 155.5%;
+        border-radius: 50%;
+        background: url(../images/dot-texture.png) repeat 0 0 #fff;
+        position: absolute;
+        top: -20%;
+        right: -32%;
+        pointer-events: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .app {
+        overflow: hidden;
+    }
+
+    .form-wrap {
+        margin: 0 -200px;
+    }
+}
+
+/* Mobile Low */
+@media (max-width: 499.98px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .heading {
+        font-size: 6rem;
+    }
+
+    .tab-switch {
+        width: 90%;
+    }
+
+    .form {
+        padding: 40px 32px;
+    }
+
+    .form-wrap {
+        margin: 0 -150px;
+    }
+
+    .text {
+        width: 86%;
+    }
+}
