@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>btvn - video 14 - Dashboard</title>
+
+        <!-- Embed fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+    </head>
+    <body>
+        <div class="container">
+            <input type="checkbox" id="toggle-menu" hidden />
+
+            <div class="wrapper">
+                <!-- Sidebar -->
+                <section class="sidebar">
+                    <nav class="nav">
+                        <a href="#!" class="nav-link">
+                            <img src="./assets/icons/symboles.svg" alt="" />
+                        </a>
+                        <a href="#!" class="nav-link active">
+                            <img src="./assets/icons/home.png" alt="" />
+                        </a>
+                        <a href="#!" class="nav-link">
+                            <img src="./assets/icons/message.svg" alt="" />
+                        </a>
+                        <a href="#!" class="nav-link">
+                            <img src="./assets/icons/buy.svg" alt="" />
+                        </a>
+                        <a href="#!" class="nav-link">
+                            <img src="./assets/icons/activity.svg" alt="" />
+                        </a>
+                        <a href="#!" class="nav-link">
+                            <img src="./assets/icons/circle.svg" alt="" />
+                        </a>
+
+                        <div class="line"></div>
+
+                        <a href="#!" class="nav-link">
+                            <img src="./assets/icons/wallet.svg" alt="" />
+                        </a>
+                        <a href="#!" class="nav-link">
+                            <img src="./assets/icons/friend.svg" alt="" />
+                        </a>
+                        <a href="#!" class="nav-link">
+                            <img src="./assets/icons/setting.svg" alt="" />
+                        </a>
+                        <a href="#!" class="nav-link">
+                            <img src="./assets/icons/log-out.svg" alt="" />
+                        </a>
+                    </nav>
+                </section>
+
+                <!-- Profile -->
+                <section class="profile">
+                    <header class="head">
+                        <h1 class="title">My Profile</h1>
+
+                        <div class="avatar">
+                            <img src="./assets/images/avatar.png" alt="" />
+                        </div>
+                        <h2 class="name">Duc Nguyen</h2>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="info-group">
+                                    <div class="qty-wrap"><span class="qty">120</span></div>
+                                    <span class="desc">Asset</span>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="info-group">
+                                    <div class="qty-wrap"><span class="qty">10K</span></div>
+                                    <span class="desc">Followers</span>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="info-group">
+                                    <div class="qty-wrap"><span class="qty">70k</span></div>
+                                    <span class="desc">Likes</span>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="info-group">
+                                    <div class="qty-wrap"><span class="qty">60</span></div>
+                                    <span class="desc">Bidding</span>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- End .head profile -->
+
+                    <div class="balance">
+                        <h3 class="heading">Your Balance</h3>
+                        <div class="content">
+                            <img src="./assets/images/ethereum.svg" alt="" />
+                            <p class="text">4,668 ETH</p>
+                            <div class="action">
+                                <button class="add">
+                                    Add
+                                    <img
+                                        src="./assets/icons/chevron-right.svg"
+                                        alt=""
+                                        class="icon"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End .balance -->
+
+                    <div class="revenue">
+                        <div class="top">
+                            <h3 class="heading">Revenue</h3>
+                            <div class="month-wrap">
+                                <p class="months">This Month</p>
+                                <img src="./assets/icons/chevron-right.svg" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="body">
+                            <div class="body-row">
+                                <span class="number">2.0</span>
+                                <div class="dash"></div>
+                            </div>
+                            <div class="body-row">
+                                <span class="number">1.5</span>
+                                <div class="dash"></div>
+                            </div>
+                            <div class="body-row">
+                                <span class="number">1.0</span>
+                                <div class="dash"></div>
+                            </div>
+                            <div class="body-row">
+                                <span class="number">0.5</span>
+                                <div class="dash"></div>
+                            </div>
+
+                            <div class="body-row row-bottom">
+                                <span class="month">Jan</span>
+                                <span class="month">Feb</span>
+                                <span class="month">Mar</span>
+                                <span class="month">Apr</span>
+                                <span class="month">May</span>
+                                <span class="month">Jun</span>
+                            </div>
+
+                            <img
+                                src="./assets/images/graph-movement.png"
+                                alt=""
+                                class="graph-movement"
+                            />
+                        </div>
+                    </div>
+                    <!-- End .revenue -->
+
+                    <div class="recent">
+                        <div class="top">
+                            <h3 class="heading">Recent Activity</h3>
+                            <div class="all-wrap">
+                                <p class="see-all">See All</p>
+                                <img src="./assets/icons/arrow.svg" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <!-- Item 1 -->
+                            <div class="item">
+                                <img src="./assets/images/recent-1.png" alt="" />
+                                <div class="content">
+                                    <p class="title">Crystal_Art</p>
+                                    <p class="desc">
+                                        by
+                                        <span class="hight-color"> @ngdc </span>
+                                    </p>
+                                </div>
+                                <div class="info-footer">
+                                    <p class="new">New Bid</p>
+                                    <p class="qty">6.25 ETH</p>
+                                    <p class="time">3m ago</p>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="item">
+                                <img src="./assets/images/recent-2.png" alt="" />
+                                <div class="content">
+                                    <p class="title">Creative Art</p>
+                                    <p class="desc">
+                                        by
+                                        <span class="hight-color"> @ngdc </span>
+                                    </p>
+                                </div>
+                                <div class="info-footer">
+                                    <p class="new">New Bid</p>
+                                    <p class="qty">7.50 ETH</p>
+                                    <p class="time">3m ago</p>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="item">
+                                <img src="./assets/images/recent-1.png" alt="" />
+                                <div class="content">
+                                    <p class="title">Crystal_Art</p>
+                                    <p class="desc">
+                                        by
+                                        <span class="hight-color"> @ngdc </span>
+                                    </p>
+                                </div>
+                                <div class="info-footer">
+                                    <p class="new">New Bid</p>
+                                    <p class="qty">6.25 ETH</p>
+                                    <p class="time">3m ago</p>
+                                </div>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="item">
+                                <img src="./assets/images/recent-2.png" alt="" />
+                                <div class="content">
+                                    <p class="title">Creative Art</p>
+                                    <p class="desc">
+                                        by
+                                        <span class="hight-color"> @ngdc </span>
+                                    </p>
+                                </div>
+                                <div class="info-footer">
+                                    <p class="new">New Bid</p>
+                                    <p class="qty">7.50 ETH</p>
+                                    <p class="time">3m ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End .recent -->
+                </section>
+
+                <!-- Header -->
+                <header class="header">
+                    <form action="" class="search-form">
+                        <img src="./assets/icons/search.svg" alt="" class="search-icon" />
+                        <input type="text" placeholder="Search by creator or collection" />
+                    </form>
+                    <!-- End .search-form -->
+
+                    <button class="btn btn-eth">
+                        <img src="./assets/icons/icon-eth.svg" alt="" class="icon-eth" />
+                        3,25 ETH
+                    </button>
+                    <button class="btn btn-bell">
+                        <img src="./assets/icons/bell.svg" alt="" />
+                    </button>
+                    <button class="btn btn-create">Create</button>
+                    <button class="btn btn-wallet">Connect Wallet</button>
+
+                    <div class="user">
+                        <div class="user-avatar">
+                            <img src="./assets/images/avatar.png" alt="" />
+                        </div>
+                        <div class="content">
+                            <div class="name">Nguyen Duc</div>
+                            <p class="desc">@ngdc</p>
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <img src="./assets/icons/chevron-right.svg" alt="" class="arrow-icon" />
+                    </div>
+
+                    <label for="toggle-menu" class="menu-bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                </header>
+
+                <!-- Main -->
+                <section class="main">
+                    <div class="main-top">
+                        <h2 class="main-heading">Popular NFT’s Live Auction</h2>
+                        <div class="main-show-wrap">
+                            <button class="show">Show More</button>
+                            <img src="./assets/icons/show-arrow.svg" alt="" />
+                        </div>
+                    </div>
+                    <!-- End .main-to -->
+
+                    <div class="main-slider">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="slider-item">
+                                    <img
+                                        src="./assets/images/slider-1.png"
+                                        alt=""
+                                        class="slider-img"
+                                    />
+
+                                    <div class="slider-info">
+                                        <div class="slider-content">
+                                            <img
+                                                src="./assets/icons/hourglass.png"
+                                                alt=""
+                                                class="slider-icon"
+                                            />
+                                            <div class="content-wrap">
+                                                <p class="content-time">18h : 17m : 29s</p>
+                                                <p class="content-desc">Time Remaining</p>
+                                            </div>
+                                            <div class="content-wrap">
+                                                <p class="content-eth">17.53 ETH</p>
+                                                <p class="content-desc">Highest Bid</p>
+                                            </div>
+                                        </div>
+                                        <button class="slider-btn">Place A Bid</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End col 1 -->
+
+                            <div class="col-12 col-md-6">
+                                <div class="slider-item">
+                                    <img
+                                        src="./assets/images/slider-2.png"
+                                        alt=""
+                                        class="slider-img"
+                                    />
+
+                                    <div class="slider-info">
+                                        <div class="slider-content">
+                                            <img
+                                                src="./assets/icons/hourglass.png"
+                                                alt=""
+                                                class="slider-icon"
+                                            />
+                                            <div class="content-wrap">
+                                                <p class="content-time">18h : 17m : 29s</p>
+                                                <p class="content-desc">Time Remaining</p>
+                                            </div>
+                                            <div class="content-wrap">
+                                                <p class="content-time">17.53 ETH</p>
+                                                <p class="content-desc">Highest Bid</p>
+                                            </div>
+                                        </div>
+                                        <button class="slider-btn">Place A Bid</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End col 2 -->
+                        </div>
+                    </div>
+                    <!-- End .main-slider -->
+
+                    <div class="main-seller">
+                        <h2 class="main-title">⭐ Top Sellers</h2>
+
+                        <div class="main-list">
+                            <!-- main Item 1 -->
+                            <div class="main-item">
+                                <img src="./assets/images/seller-1.png" alt="" />
+                                <div class="main-body">
+                                    <p class="main-name">
+                                        @hgan
+                                        <img src="./assets/icons/check.svg" alt="" />
+                                    </p>
+                                    <p class="main-price">$232,102</p>
+                                </div>
+                            </div>
+
+                            <!-- main Item 2 -->
+                            <div class="main-item">
+                                <img src="./assets/images/seller-2.png" alt="" />
+                                <div class="main-body">
+                                    <p class="main-name">
+                                        @anhqun
+                                        <img src="./assets/icons/check.svg" alt="" />
+                                    </p>
+                                    <p class="main-price">$232,102</p>
+                                </div>
+                            </div>
+
+                            <!-- main Item 3 -->
+                            <div class="main-item">
+                                <img src="./assets/images/seller-3.png" alt="" />
+                                <div class="main-body">
+                                    <p class="main-name">@hgan</p>
+                                    <p class="main-price">@anhqun</p>
+                                </div>
+                            </div>
+
+                            <!-- main Item 4 -->
+                            <div class="main-item">
+                                <img src="./assets/images/seller-4.png" alt="" />
+                                <div class="main-body">
+                                    <p class="main-name">@dnhp</p>
+                                    <p class="main-price">$92,002</p>
+                                </div>
+                            </div>
+
+                            <!-- main Item 5 -->
+                            <div class="main-item">
+                                <img src="./assets/images/seller-5.png" alt="" />
+                                <div class="main-body">
+                                    <p class="main-name">
+                                        @sondn
+                                        <img src="./assets/icons/check.svg" alt="" />
+                                    </p>
+                                    <p class="main-price">$172,023</p>
+                                </div>
+                            </div>
+
+                            <!-- main Item 6 -->
+                            <div class="main-item">
+                                <img src="./assets/images/seller-6.png" alt="" />
+                                <div class="main-body">
+                                    <p class="main-name">
+                                        @ali33
+                                        <img src="./assets/icons/check.svg" alt="" />
+                                    </p>
+                                    <p class="main-price">$172,023</p>
+                                </div>
+                            </div>
+
+                            <!-- main Item 7 -->
+                            <div class="main-item">
+                                <img src="./assets/images/seller-2.png" alt="" />
+                                <div class="main-body">
+                                    <p class="main-name">
+                                        @anhqun
+                                        <img src="./assets/icons/check.svg" alt="" />
+                                    </p>
+                                    <p class="main-price">$232,102</p>
+                                </div>
+                            </div>
+
+                            <!-- main Item 8 -->
+                            <div class="main-item">
+                                <img src="./assets/images/seller-3.png" alt="" />
+                                <div class="main-body">
+                                    <p class="main-name">@hgan</p>
+                                    <p class="main-price">@anhqun</p>
+                                </div>
+                            </div>
+
+                            <!-- main Item 9 -->
+                            <div class="main-item">
+                                <img src="./assets/images/seller-4.png" alt="" />
+                                <div class="main-body">
+                                    <p class="main-name">@dnhp</p>
+                                    <p class="main-price">$92,002</p>
+                                </div>
+                            </div>
+
+                            <!-- main Item 10 -->
+                            <div class="main-item">
+                                <img src="./assets/images/seller-5.png" alt="" />
+                                <div class="main-body">
+                                    <p class="main-name">
+                                        @sondn
+                                        <img src="./assets/icons/check.svg" alt="" />
+                                    </p>
+                                    <p class="main-price">$172,023</p>
+                                </div>
+                            </div>
+
+                            <!-- main Item 11 -->
+                            <div class="main-item">
+                                <img src="./assets/images/seller-6.png" alt="" />
+                                <div class="main-body">
+                                    <p class="main-name">
+                                        @ali33
+                                        <img src="./assets/icons/check.svg" alt="" />
+                                    </p>
+                                    <p class="main-price">$172,023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .main-list -->
+                    </div>
+                    <!-- End .main-seller -->
+
+                    <div class="main-bid">
+                        <div class="bid-title">🔥 Hot Bids</div>
+
+                        <div class="bid-list">
+                            <div class="row">
+                                <!-- col 1 -->
+                                <div class="col-6 col-sm-4 col-lg-3 col-xl-3 col-xxl-4">
+                                    <div class="bid-item">
+                                        <div class="item-top">
+                                            <img
+                                                src="./assets/images/big-bg.png"
+                                                alt=""
+                                                class="bg"
+                                            />
+                                            <p class="item-time">02:32:07</p>
+                                        </div>
+                                        <!-- End .bid-top -->
+                                        <div class="item-action">
+                                            <p class="item-qty">232</p>
+                                            <img
+                                                src="./assets/icons/heart-1.svg"
+                                                alt=""
+                                                class="heart"
+                                            />
+                                        </div>
+
+                                        <img
+                                            src="./assets/images/bid-thumb-1.png"
+                                            alt=""
+                                            class="item-thumb"
+                                        />
+
+                                        <div class="bid-item-body">
+                                            <h3 class="bid-item-title">Stretch Of Time</h3>
+                                            <div class="item-body-bottom">
+                                                <p class="item-bottom-price">0.045 ETH</p>
+                                                <div class="item-avatars">
+                                                    <img
+                                                        src="./assets/images/bid-avatar-1.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                    <img
+                                                        src="./assets/images/bid-avatar-2.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                    <img
+                                                        src="./assets/images/bid-avatar-3.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- col 2 -->
+                                <div class="col-6 col-sm-4 col-lg-3 col-xl-3 col-xxl-4">
+                                    <div class="bid-item">
+                                        <div class="item-top">
+                                            <img
+                                                src="./assets/images/big-bg.png"
+                                                alt=""
+                                                class="bg"
+                                            />
+                                            <p class="item-time">00:00:00</p>
+                                        </div>
+                                        <!-- End .bid-top -->
+                                        <div class="item-action">
+                                            <p class="item-qty">172</p>
+                                            <img
+                                                src="./assets/icons/heart-2.svg"
+                                                alt=""
+                                                class="heart"
+                                            />
+                                        </div>
+
+                                        <img
+                                            src="./assets/images/bid-thumb-2.png"
+                                            alt=""
+                                            class="item-thumb"
+                                        />
+
+                                        <div class="bid-item-body">
+                                            <h3 class="bid-item-title">Arcade Land</h3>
+                                            <div class="item-body-bottom">
+                                                <p class="item-bottom-price">0.045 ETH</p>
+                                                <div class="item-avatars">
+                                                    <img
+                                                        src="./assets/images/bid-avatar-4.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                    <img
+                                                        src="./assets/images/bid-avatar-5.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                    <img
+                                                        src="./assets/images/bid-avatar-6.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- col 3 -->
+                                <div class="col-6 col-sm-4 col-lg-3 col-xl-3 col-xxl-4">
+                                    <div class="bid-item">
+                                        <div class="item-top">
+                                            <img
+                                                src="./assets/images/big-bg.png"
+                                                alt=""
+                                                class="bg"
+                                            />
+                                            <p class="item-time">12:05:00</p>
+                                        </div>
+                                        <!-- End .bid-top -->
+                                        <div class="item-action">
+                                            <p class="item-qty">99</p>
+                                            <img
+                                                src="./assets/icons/heart-2.svg"
+                                                alt=""
+                                                class="heart"
+                                            />
+                                        </div>
+
+                                        <img
+                                            src="./assets/images/bid-thumb-3.png"
+                                            alt=""
+                                            class="item-thumb"
+                                        />
+
+                                        <div class="bid-item-body">
+                                            <h3 class="bid-item-title">Shinsekai Portal</h3>
+                                            <div class="item-body-bottom">
+                                                <p class="item-bottom-price">0.045 ETH</p>
+                                                <div class="item-avatars">
+                                                    <img
+                                                        src="./assets/images/bid-avatar-1.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                    <img
+                                                        src="./assets/images/bid-avatar-2.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                    <img
+                                                        src="./assets/images/bid-avatar-3.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- col 4 -->
+                                <div class="col-6 col-sm-4 col-lg-3 col-xl-3 col-xxl-4">
+                                    <div class="bid-item">
+                                        <div class="item-top">
+                                            <img
+                                                src="./assets/images/big-bg.png"
+                                                alt=""
+                                                class="bg"
+                                            />
+                                            <p class="item-time">00:00:00</p>
+                                        </div>
+                                        <!-- End .bid-top -->
+                                        <div class="item-action">
+                                            <p class="item-qty">43</p>
+                                            <img
+                                                src="./assets/icons/heart-1.svg"
+                                                alt=""
+                                                class="heart"
+                                            />
+                                        </div>
+
+                                        <img
+                                            src="./assets/images/bid-thumb-4.png"
+                                            alt=""
+                                            class="item-thumb"
+                                        />
+
+                                        <div class="bid-item-body">
+                                            <h3 class="bid-item-title">Paper Cut</h3>
+                                            <div class="item-body-bottom">
+                                                <p class="item-bottom-price">0.045 ETH</p>
+                                                <div class="item-avatars">
+                                                    <img
+                                                        src="./assets/images/bid-avatar-1.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                    <img
+                                                        src="./assets/images/bid-avatar-2.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                    <img
+                                                        src="./assets/images/bid-avatar-3.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- col 5 -->
+                                <div class="col-6 col-sm-4 col-lg-3 col-xl-3 col-xxl-4">
+                                    <div class="bid-item">
+                                        <div class="item-top">
+                                            <img
+                                                src="./assets/images/big-bg.png"
+                                                alt=""
+                                                class="bg"
+                                            />
+                                            <p class="item-time">00:00:00</p>
+                                        </div>
+                                        <!-- End .bid-top -->
+                                        <div class="item-action">
+                                            <p class="item-qty">42</p>
+                                            <img
+                                                src="./assets/icons/heart-1.svg"
+                                                alt=""
+                                                class="heart"
+                                            />
+                                        </div>
+
+                                        <img
+                                            src="./assets/images/bid-thumb-5.png"
+                                            alt=""
+                                            class="item-thumb"
+                                        />
+
+                                        <div class="bid-item-body">
+                                            <h3 class="bid-item-title">Paper Cut</h3>
+                                            <div class="item-body-bottom">
+                                                <p class="item-bottom-price">0.045 ETH</p>
+                                                <div class="item-avatars">
+                                                    <img
+                                                        src="./assets/images/bid-avatar-4.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                    <img
+                                                        src="./assets/images/bid-avatar-5.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                    <img
+                                                        src="./assets/images/bid-avatar-6.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- col 6 -->
+                                <div class="col-6 col-sm-4 col-lg-3 col-xl-3 col-xxl-4">
+                                    <div class="bid-item">
+                                        <div class="item-top">
+                                            <img
+                                                src="./assets/images/big-bg.png"
+                                                alt=""
+                                                class="bg"
+                                            />
+                                            <p class="item-time">00:00:00</p>
+                                        </div>
+                                        <!-- End .bid-top -->
+                                        <div class="item-action">
+                                            <p class="item-qty">40</p>
+                                            <img
+                                                src="./assets/icons/heart-1.svg"
+                                                alt=""
+                                                class="heart"
+                                            />
+                                        </div>
+
+                                        <img
+                                            src="./assets/images/bid-thumb-6.png"
+                                            alt=""
+                                            class="item-thumb"
+                                        />
+
+                                        <div class="bid-item-body">
+                                            <h3 class="bid-item-title">Akuma Origins</h3>
+
+                                            <div class="item-body-bottom">
+                                                <p class="item-bottom-price">0.045 ETH</p>
+                                                <div class="item-avatars">
+                                                    <img
+                                                        src="./assets/images/bid-avatar-1.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                    <img
+                                                        src="./assets/images/bid-avatar-2.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                    <img
+                                                        src="./assets/images/bid-avatar-3.png"
+                                                        alt=""
+                                                        class="item-avatar"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .bid-list -->
+                    </div>
+                    <!-- End .main-bid -->
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

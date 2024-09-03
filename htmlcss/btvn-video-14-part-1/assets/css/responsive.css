@@ -1,0 +1,126 @@
+@media (min-width: 1200px) {
+    .sidebar {
+        height: 90%;
+    }
+    .profile {
+        display: block;
+    }
+
+    .btn-eth,
+    .btn-bell,
+    .btn-create,
+    .btn-wallet {
+        display: none;
+    }
+
+    .bid-list {
+        margin-top: 0;
+    }
+
+    .bid-item {
+        margin-top: 60px;
+    }
+    .item-thumb {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .item-thumb {
+        width: 100%;
+    }
+
+    .sidebar {
+        height: 86%;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: calc(100% - 48px);
+    }
+
+    .header {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .user::before {
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .search-form,
+    .btn-eth,
+    .btn-bell,
+    .btn-create,
+    .btn-wallet {
+        display: none;
+    }
+
+    .menu-bar {
+        font-size: 30px;
+        display: block;
+    }
+
+    .bid-list {
+        margin-top: 0;
+    }
+
+    .bid-item {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        width: 46px;
+        height: 56%;
+        margin-right: 24px;
+    }
+
+    .main-slider {
+        margin-top: 0;
+    }
+
+    .slider-item {
+        margin-top: 20px;
+    }
+
+    .item-action {
+        right: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .sidebar {
+        height: 50%;
+    }
+
+    .nav {
+        gap: 32px;
+    }
+
+    .nav .nav-link:last-child {
+        margin-top: 128px;
+    }
+
+    .user {
+        margin-left: 0;
+    }
+
+    .main-item {
+        margin-right: 110px;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+    }
+
+    .main-show-wrap {
+        gap: 4px;
+    }
+}

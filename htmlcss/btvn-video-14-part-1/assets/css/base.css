@@ -1,0 +1,30 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+input,
+button,
+select,
+textarea {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
