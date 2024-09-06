@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=`, initial-scale=1.0" />
+        <title>GreenChop</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <body>
+        <header class="header fixed">
+            <div class="container">
+                <div class="header-inner">
+                    <a href="./" class="logo">
+                        <img src="./assets/images/logo.svg" alt="GreenChop" />
+                    </a>
+
+                    <input type="checkbox" id="toggle-menu" hidden />
+                    <nav class="nav">
+                        <a href="./" class="logo d-none d-lg-block">
+                            <img src="./assets/images/logo.svg" alt="GreenChop" />
+                        </a>
+                        <a href="./index.html">Trang chủ</a>
+                        <a href="./about.html">Về Greenchop</a>
+                        <a href="./product.html">Sản phẩm</a>
+                        <a href="./new.html">Tin tức</a>
+                        <a href="./contact.html" class="active">Liên hệ</a>
+                    </nav>
+                    <!-- End .nav -->
+
+                    <a href="./cart.html" class="cart-btn">
+                        <img src="./assets/icons/cart.svg" alt="" class="icon" />
+                        <span class="cart-qty">3</span>
+                    </a>
+                    <!-- End .cart-btn -->
+
+                    <label for="toggle-search" class="search-btn">
+                        <img src="./assets/icons/search.svg" alt="" class="icon" />
+                    </label>
+                    <!-- End .search-btn -->
+
+                    <label for="toggle-menu" class="menu-bar d-none d-lg-block">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <!-- End .menu-bar -->
+
+                    <label for="toggle-menu" class="overlay"></label>
+                </div>
+                <!-- End .header-inner -->
+            </div>
+            <input type="checkbox" id="toggle-search" hidden />
+            <form action="" class="form-search">
+                <input
+                    type="text"
+                    placeholder="Nhập thông tin bạn muốn tìm..."
+                    class="search-input"
+                />
+            </form>
+            <!-- End .form-search -->
+        </header>
+        <!-- End .header -->
+
+        <main>
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59585.57208777969!2d105.74971376721238!3d21.028754205685342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab5756f91033%3A0x576917442d674bfd!2zQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1725607114984!5m2!1svi!2s"
+                    width="100%"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+            <!-- End .contact-map -->
+
+            <section class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="contact-info">
+                                <h1 class="contact-info-title">Liên hệ</h1>
+                                <p class="contact-info-desc">Đặt hàng trực tuyến (8h-22h)</p>
+
+                                <ul class="contact-info-list">
+                                    <li class="contact-info-item">
+                                        <img src="./assets/icons/alarm.svg" alt="" />
+                                        <span class="bold">Thứ 2 - Thứ 6</span>
+                                    </li>
+                                    <li class="contact-info-item">
+                                        <img src="./assets/icons/phone_outline.svg" alt="" />
+                                        <a href="tel:091 1717 222" class="bold">091 1717 222</a>
+                                    </li>
+                                    <li class="contact-info-item">
+                                        <img src="./assets/icons/mail.svg" alt="" />
+                                        <a href="mailto:greenchopvn@gmail.com"
+                                            >greenchopvn@gmail.com</a
+                                        >
+                                    </li>
+                                    <li class="contact-info-item">
+                                        <img src="./assets/icons/globe.svg" alt="" />
+                                        <span>Greenchop.vn</span>
+                                    </li>
+                                    <li class="contact-info-item">
+                                        <img src="./assets/icons/map-pin.svg" alt="" />
+                                        <span
+                                            >428 Điện Biên Phủ, P11, <br />
+                                            Quận 10, TPHCM</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-8">
+                            <p class="contact-title">
+                                Bạn có bất kì thắc mắc nào. <br />
+                                Hãy để lại tin nhắn cho chúng tôi nhé!
+                            </p>
+                            <form action="" class="contact-form">
+                                <!-- row 1 -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input
+                                            type="text"
+                                            placeholder="Tên của bạn"
+                                            class="form-name"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+
+                                <!-- row 2 -->
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input
+                                            type="email"
+                                            placeholder="Email"
+                                            class="form-email"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="col-6">
+                                        <input
+                                            type="number"
+                                            placeholder="Số điện thoại"
+                                            class="form-phone"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+
+                                <!-- row 3 -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <textarea
+                                            placeholder="Nội dung..."
+                                            class="form-message"
+                                            required
+                                        ></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-btn">
+                                    <button class="btn form-submit">Gửi</button>
+                                </div>
+                            </form>
+                            <!-- End .contact-form -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="certificate">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <!--certificate item 1  -->
+                            <div class="certificate-item">
+                                <img
+                                    src="./assets/icons/certificate-icon-1.svg"
+                                    alt=""
+                                    class="certificate-img"
+                                />
+                                <div class="certificate-content">
+                                    <h4 class="certificate-title">Chất liệu an toàn</h4>
+                                    <p class="certificate-desc">
+                                        Phần đầu đũa được làm bằng bằng gỗ tre, đảm bảo cho sức khỏe
+                                        người dùng
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <!--certificate item 2  -->
+                            <div class="certificate-item">
+                                <img
+                                    src="./assets/icons/certificate-icon-2.svg"
+                                    alt=""
+                                    class="certificate-img"
+                                />
+                                <div class="certificate-content">
+                                    <h4 class="certificate-title">Vệ sinh và khử khuẩn</h4>
+                                    <p class="certificate-desc">
+                                        Đầu đũa mới 100% mỗi bữa ăn, không chung đụng đầu đũa với
+                                        bất kì ai khác.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <!--certificate item 3  -->
+                            <div class="certificate-item">
+                                <img
+                                    src="./assets/icons/certificate-icon-3.svg"
+                                    alt=""
+                                    class="certificate-img"
+                                />
+                                <div class="certificate-content">
+                                    <h4 class="certificate-title">Tiện lợi</h4>
+                                    <p class="certificate-desc">
+                                        Thao tác tháo lắp nhanh gọn và đơn giản
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <!--certificate item 4  -->
+                            <div class="certificate-item">
+                                <img
+                                    src="./assets/icons/certificate-icon-4.svg"
+                                    alt=""
+                                    class="certificate-img"
+                                />
+                                <div class="certificate-content">
+                                    <h4 class="certificate-title">Tiết kiệm</h4>
+                                    <p class="certificate-desc">
+                                        Giá thành đầu đũa cạnh tranh và hợp lý.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <!--certificate item 5  -->
+                            <div class="certificate-item">
+                                <img
+                                    src="./assets/icons/certificate-icon-5.svg"
+                                    alt=""
+                                    class="certificate-img"
+                                />
+                                <div class="certificate-content">
+                                    <h4 class="certificate-title">Độc quyền</h4>
+                                    <p class="certificate-desc">
+                                        GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường
+                                        Việt Nam hiện tại
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <!--certificate item 6  -->
+                            <div class="certificate-item">
+                                <img
+                                    src="./assets/icons/certificate-icon-6.svg"
+                                    alt=""
+                                    class="certificate-img"
+                                />
+                                <div class="certificate-content">
+                                    <h4 class="certificate-title">Giao hàng nhanh</h4>
+                                    <p class="certificate-desc">Giao hàng trong 24h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End .certificate -->
+
+            <footer class="footer">
+                <div class="container">
+                    <!-- row 1 -->
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="./" class="logo">
+                                <img src="./assets/images/footer-logo.svg" alt="GreenChop" />
+                            </a>
+                            <p class="footer-text">
+                                <span> GreenChop là bạn đồng hành</span> <br />
+                                của người tiêu dùng
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4 class="footer-title">Trang chủ</h4>
+                            <ul>
+                                <li>
+                                    <a href="./about.html" class="footer-link">Về greenchop</a>
+                                </li>
+                                <li>
+                                    <a href="./product.html" class="footer-link">Sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="./new.html" class="footer-link">Tin tức</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4 class="footer-title footer-title-support">Hỗ trợ</h4>
+                            <p class="footer-desc">Đặt hàng trực tuyến (8h-22h)</p>
+                            <div class="footer-alarm">
+                                <img src="./assets/icons/alarm.svg" alt="" />
+                                <p class="footer-day">Thứ 2 - Thứ 6</p>
+                            </div>
+                            <a href="tel:091 1717 222" class="footer-phone">
+                                <img src="./assets/icons/phone_outline.svg" alt="" />
+                                091 1717 222
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4 class="footer-title footer-title-contact">Liên hệ</h4>
+                            <a href="mailto:greenchopvn@gmail.com" class="footer-email">
+                                <img src="./assets/icons/mail.svg" alt="" />
+                                greenchopvn@gmail.com
+                            </a>
+                            <p class="footer-home">
+                                <img src="./assets/icons/globe.svg" alt="" />
+                                Greenchop.vn
+                            </p>
+                            <div class="footer-location">
+                                <img src="./assets/icons/map-pin.svg" alt="" />
+                                <p class="footer-address">
+                                    428 Điện Biên Phủ, P11, <br />
+                                    Quận 10, TPHCM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-line"></div>
+
+                    <!-- row 2 -->
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-6">
+                            <img src="./assets/images/footer-img.svg" alt="" />
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="socials">
+                                <div class="social-bg">
+                                    <a href="#!" class="social-link">
+                                        <img src="./assets/icons/youtube.svg" alt="youtube" />
+                                    </a>
+                                </div>
+                                <div class="social-bg">
+                                    <a href="#!" class="social-link">
+                                        <img src="./assets/icons/facebook.svg" alt="facebook" />
+                                    </a>
+                                </div>
+                                <div class="social-bg">
+                                    <a href="#!" class="social-link">
+                                        <img src="./assets/icons/instagram.svg" alt="instagram" />
+                                    </a>
+                                </div>
+                                <div class="social-bg">
+                                    <a href="#!" class="social-link">
+                                        <img src="./assets/icons/twitter.svg" alt="twitter" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End .footer -->
+        </main>
+    </body>
+</html>

@@ -1,0 +1,232 @@
+@use "../abstracts";
+
+%flex-center {
+    display: flex;
+    align-items: center;
+}
+.cart {
+    margin-top: 100px;
+
+    .container {
+        max-width: 980px;
+    }
+
+    &-title {
+        margin-bottom: 27px;
+        color: #000;
+        font-size: 2.3333rem;
+        font-weight: 700;
+    }
+
+    &-table {
+        @extend %flex-center;
+        justify-content: center;
+        border-radius: 3.333px;
+        opacity: 0.8;
+        background: #fff0e7;
+
+        li {
+            padding: 25px 60px 22.17px;
+            font-size: 1.6667rem;
+            font-weight: 600;
+            line-height: 21.667px;
+
+            @include abstracts.screen(lg) {
+                padding: 25px 40px 22.17px;
+            }
+
+            @include abstracts.screen(sm) {
+                padding: 25px 10px 22.17px;
+            }
+        }
+
+        li:first-child {
+            margin-left: 70px;
+
+            @include abstracts.screen(sm) {
+                margin-left: 60px;
+            }
+        }
+    }
+
+    &-content {
+        position: relative;
+        @extend %flex-center;
+        justify-content: space-between;
+        margin-top: 13.33px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -7.21px;
+            left: 0;
+            width: 100%;
+            height: 0.833px;
+            background: #cbcbcb;
+        }
+
+        @include abstracts.screen(md) {
+            > img {
+                width: 70px;
+            }
+        }
+    }
+
+    &-info-wrap {
+        @extend %flex-center;
+        justify-content: space-between;
+        width: 83%;
+        gap: 54px;
+
+        @include abstracts.screen(lg) {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 0.8fr 0.3fr 1.3fr;
+            gap: 10px;
+            width: 80%;
+
+            .btn-remove {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        @include abstracts.screen(md) {
+            width: 88%;
+
+            .btn-remove {
+                bottom: 10px;
+            }
+        }
+
+        @include abstracts.screen(sm) {
+            grid-template-columns: 0.6fr 1fr;
+            margin-left: 20px;
+
+            .btn-remove {
+                bottom: 30px;
+            }
+        }
+    }
+
+    &-name {
+        color: #000;
+        font-size: 1.6667rem;
+        font-weight: 600;
+    }
+
+    &-qty {
+        color: #656565;
+        font-size: 1.3333rem;
+        line-height: 20.417px;
+    }
+
+    &-price {
+        min-width: 120px;
+        font-size: 1.6667rem;
+        font-weight: 600;
+        line-height: 21.667px;
+    }
+
+    &-numbers {
+        @extend %flex-center;
+        column-gap: 20px;
+        padding: 10px 16.667px;
+        border-radius: 3.333px;
+        border: 0.833px solid #a7a7a7;
+    }
+
+    &-total-price {
+        @extend .cart-price;
+    }
+
+    &-btn-wrap {
+        text-align: right;
+    }
+
+    &-add-btn {
+        min-width: 128px;
+        margin-top: 52.21px;
+        padding: 13.333px 11.667px;
+        border-radius: 6.667px;
+        background: var(--second-color);
+    }
+
+    &-total {
+        width: 51.5%;
+        margin: 68.33px 0 67.5px;
+        padding: 36.67px 23.33px 62.5px 26.17px;
+        border-radius: 3.333px;
+        opacity: 0.8;
+        background: var(--Orange-100, #fff0e7);
+
+        @include abstracts.screen(md) {
+            width: 70%;
+        }
+
+        @include abstracts.screen(sm) {
+            width: 100%;
+        }
+
+        &-title {
+            font-size: 2.3333rem;
+            font-weight: 700;
+        }
+
+        &-product {
+            position: relative;
+            margin-top: 3.45rem;
+            @extend %flex-center;
+            column-gap: 145.33px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -20px;
+                width: 100%;
+                height: 0.833px;
+                background: #b7b7b7;
+            }
+        }
+
+        &-text {
+            font-size: 1.6667rem;
+            font-weight: 600;
+
+            span {
+                @extend .cart-total-text;
+            }
+        }
+
+        &-pay {
+            margin-top: 45px;
+            @extend %flex-center;
+            justify-content: space-between;
+
+            span {
+                color: #e05000;
+                font-size: 2.3333rem;
+                font-weight: 700;
+            }
+        }
+
+        &-desc {
+            @extend .cart-total-text;
+        }
+
+        &-btn {
+            margin-top: 42.5px;
+            width: 100%;
+            height: 46.67px;
+            padding: 13.333px 11.667px;
+            border-radius: 6.667px;
+            background: #000;
+            color: var(--while-color);
+            text-align: center;
+            font-size: 16.667px;
+            font-weight: 700;
+        }
+    }
+}

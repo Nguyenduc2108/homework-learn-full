@@ -1,0 +1,27 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-top: var(--header-height);
+    height: 166.667px;
+    background: var(--green-100-color);
+
+    &-title {
+        font-size: 4.3333rem;
+        font-weight: 700;
+    }
+}
+
+.breadcrumb-detail {
+    height: 83.333px;
+
+    .breadcrumb-title {
+        font-size: 1.6667rem;
+        line-height: 21.667px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .hight-color {
+        color: var(--second-color);
+    }
+}

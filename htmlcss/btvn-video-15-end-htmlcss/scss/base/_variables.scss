@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #2c2c2c;
+    --second-color: #46b20f;
+    --orange-700-color: #ff6916;
+    --active-color: #e05000;
+    --disabled-color: ##b7b7b7;
+    --while-color: #ffffff;
+    --green-100-color: #f2ffec;
+    --green-900-color: #2e8900;
+
+    --icon-color: brightness(0) saturate(100%) invert(15%) sepia(6%) saturate(26%)
+        hue-rotate(342deg) brightness(89%) contrast(89%);
+
+    --icon-hover-color:filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7488%) hue-rotate(255deg) brightness(100%) contrast(101%);
+
+    --header-height: 108px;
+    --header-shadow: 0px 1.667px 8.333px 0px rgba(0, 0, 0, 0.15);
+    --cart-shadow: 3px 8px 19px 0px rgba(0, 0, 0, 0.12);
+}

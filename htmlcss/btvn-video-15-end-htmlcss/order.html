@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GreenChop</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <body>
+        <section class="order">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <div class="order-info">
+                            <h1 class="order-title">Nhập thông tin để đặt hàng.</h1>
+                            <p class="order-desc">
+                                Bạn muốn mua hàng? Hãy đăng ký vào form này, Greenchop sẽ liên hệ
+                                bạn trong thời gian sớm nhất.
+                            </p>
+                            <h2 class="order-sub-title">Combo - Quán ăn</h2>
+
+                            <div class="order-choose">
+                                <div class="order-qty-wrap">
+                                    <p class="order-qty">1 Thùng 1000 đôi</p>
+                                    <p class="order-price">Giá:<b> 600.000</b> vnd</p>
+                                </div>
+
+                                <div class="order-numbers">
+                                    <img src="./assets/icons/minus.svg" alt="" />
+                                    <span>1</span>
+                                    <img src="./assets/icons/plus.svg" alt="" />
+                                </div>
+                            </div>
+                            <!-- End .order-choose -->
+
+                            <form action="" class="order-form">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <img src="./assets/icons/profile.svg" alt="" />
+                                            <input type="text" placeholder="Tên của bạn" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <img src="./assets/icons/oreder-message.svg" alt="" />
+                                            <input type="email" placeholder="Email" required />
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <img src="./assets/icons/call.svg" alt="" />
+                                            <input
+                                                type="number"
+                                                placeholder="Số điện thoại"
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <a href="./order-success.html" class="btn form-btn">Gửi</a>
+                                </div>
+                            </form>
+                            <!-- End .order-form -->
+                        </div>
+                        <!-- End .order-info -->
+                    </div>
+
+                    <div class="col-12 col-lg-5">
+                        <div class="order-image">
+                            <img src="./assets/images/hero-bg.png" alt="" />
+                            <span>
+                                GREEN <br />
+                                CHOP
+                            </span>
+                        </div>
+                        <!-- End .order-image -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End .order -->
+    </body>
+</html>

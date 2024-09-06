@@ -1,0 +1,209 @@
+@use "../abstracts";
+
+.about-feature {
+    margin-top: 100px;
+
+    .heading {
+        text-align: center;
+        margin-bottom: 25.67px;
+    }
+
+    &-desc {
+        max-width: 60%;
+        font-size: 1.3333rem;
+        line-height: 20.417px;
+
+        @include abstracts.screen(md) {
+            max-width: 80%;
+        }
+    }
+
+    &-img {
+        @include abstracts.screen(lg) {
+            max-width: 90%;
+        }
+    }
+
+    .desc-first-line {
+        @extend .about-feature-desc;
+        margin-bottom: 30px;
+
+        @include abstracts.screen(lg) {
+            max-width: 100%;
+            margin-left: 50px;
+        }
+
+        @include abstracts.screen(md) {
+            max-width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    .desc-2 {
+        max-width: 70%;
+
+        @include abstracts.screen(lg) {
+            max-width: 100%;
+            margin-left: 50px;
+        }
+
+        @include abstracts.screen(md) {
+            margin-left: 0;
+        }
+    }
+}
+
+.about-intro {
+    margin-top: 100px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba($color: #000000, $alpha: 0.6);
+    }
+
+    > img {
+        width: 100%;
+        object-fit: cover;
+
+        @include abstracts.screen(xl) {
+            height: 400px;
+        }
+
+        @include abstracts.screen(md) {
+            height: 600px;
+        }
+
+        @include abstracts.screen(sm) {
+            height: 500px;
+        }
+    }
+
+    &-content {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .block-close {
+        position: absolute;
+        top: 115px;
+        left: -125px;
+        z-index: 3;
+    }
+
+    .block-open {
+        position: absolute;
+        bottom: 65px;
+        right: -125px;
+        z-index: 3;
+
+        @include abstracts.screen(xl) {
+            bottom: 125px;
+        }
+    }
+
+    .title {
+        margin: 70px 0 49.47px;
+        font-size: 3.1667rem;
+        font-weight: 800;
+        line-height: 131.523%;
+        text-align: center;
+        color: var(--while-color);
+
+        @include abstracts.screen(xl) {
+            margin-top: 100px;
+        }
+    }
+
+    .desc {
+        text-align: center;
+        color: var(--while-color);
+        font-size: 1.6667rem;
+        line-height: 21.667px;
+        padding-bottom: 100px;
+    }
+}
+
+.about-mission {
+    margin: 50px 0 232px;
+
+    @include abstracts.screen(md) {
+        margin-bottom: 0;
+    }
+
+    .container {
+        max-width: 1080px;
+    }
+
+    .img-wrap {
+        position: relative;
+        max-width: 400px;
+        max-height: 365px;
+        flex-shrink: 0;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 75px;
+            left: -40%;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: #dcffca;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -133px;
+            left: 100px;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: #ffd5bd;
+            z-index: -1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6.667px;
+            // box-shadow: -9.167px 25.833px 46.667px 0px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    .title {
+        font-size: 3.1667rem;
+        font-weight: 800;
+        line-height: 131.523%;
+
+        @include abstracts.screen(lg) {
+            font-size: 2.2rem;
+        }
+
+        @include abstracts.screen(md) {
+            font-size: 3rem;
+        }
+    }
+
+    .text {
+        max-width: 80%;
+        margin-top: 26.33px;
+        font-size: 1.3333rem;
+        line-height: 20.417px;
+
+        @include abstracts.screen(md) {
+            max-width: 100%;
+            font-size: 1.8rem;
+        }
+    }
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=`, initial-scale=1.0" />
+        <title>GreenChop</title>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <body>
+        <header class="header fixed">
+            <div class="container">
+                <div class="header-inner">
+                    <a href="./" class="logo">
+                        <img src="./assets/images/logo.svg" alt="GreenChop" />
+                    </a>
+
+                    <input type="checkbox" id="toggle-menu" hidden />
+                    <nav class="nav">
+                        <a href="./" class="logo d-none d-lg-block">
+                            <img src="./assets/images/logo.svg" alt="GreenChop" />
+                        </a>
+                        <a href="./index.html">Trang chủ</a>
+                        <a href="./about.html">Về Greenchop</a>
+                        <a href="./product.html">Sản phẩm</a>
+                        <a href="./new.html" class="active">Tin tức</a>
+                        <a href="./contact.html">Liên hệ</a>
+                    </nav>
+                    <!-- End .nav -->
+
+                    <a href="./cart.html" class="cart-btn">
+                        <img src="./assets/icons/cart.svg" alt="" class="icon" />
+                        <span class="cart-qty">3</span>
+                    </a>
+                    <!-- End .cart-btn -->
+
+                    <label for="toggle-search" class="search-btn">
+                        <img src="./assets/icons/search.svg" alt="" class="icon" />
+                    </label>
+                    <!-- End .search-btn -->
+
+                    <label for="toggle-menu" class="menu-bar d-none d-lg-block">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <!-- End .menu-bar -->
+
+                    <label for="toggle-menu" class="overlay"></label>
+                </div>
+                <!-- End .header-inner -->
+            </div>
+            <input type="checkbox" id="toggle-search" hidden />
+            <form action="" class="form-search">
+                <input
+                    type="text"
+                    placeholder="Nhập thông tin bạn muốn tìm..."
+                    class="search-input"
+                />
+            </form>
+            <!-- End .form-search -->
+        </header>
+        <!-- End .header -->
+
+        <main>
+            <section class="breadcrumb breadcrumb-detail">
+                <div class="container">
+                    <h1 class="breadcrumb-title">
+                        Tin tức/
+                        <span class="hight-color">Bài viết</span>
+                    </h1>
+                </div>
+            </section>
+            <!-- End .breadcrumb -->
+
+            <section class="new-detail">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="new-detail-info">
+                                <h1 class="new-detail-title">
+                                    Exerci tation ullamcer suscipit m zril delenit augue
+                                </h1>
+                                <img src="./assets/images/new-img-large.png" alt="" />
+                                <div class="new-detail-outstanding">
+                                    <span>Tin nổi bật</span>
+                                    <div class="new-detail-date">
+                                        <img src="./assets/icons/calendar.svg" alt="" />
+                                        <p class="new-detail-time">28 - 10- 2021</p>
+                                    </div>
+                                </div>
+
+                                <div class="new-detail-content">
+                                    <p class="new-detail-desc">
+                                        exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                                        ex ea commodo consequat. Lorem ipsum dolor sit amet,
+                                        consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                        wisi enim ad minim veniam, quis nostrud exerci tation
+                                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                        consequat. Duis autem vel eum iriure dolor in hendrerit in
+                                        vulputate velit esse molestie consequat, vel illum dolore eu
+                                        feugiat nulla facilisis at vero eros et accumsan et iusto
+                                        odio dignissim qui blandit praesent luptatum zzril delenit
+                                        augue duis dolore te feugait nulla facilisi. aoreet dolore
+                                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                        quis nostrud exerci tation ullamcorper suscipit lobortis
+                                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+                                        iriure dolor in hendrerit in vulputate velit esse molestie
+                                        consequat, vel illum dolore eu feugiat nulla facilisis at
+                                        vero eros et accumsan et iusto odio dignissim qui blandit
+                                        praesent luptatum zzril
+                                    </p>
+                                    <p class="new-detail-desc">
+                                        delenit augue duis dolore te feugait nulla facilisi. Lorem
+                                        ipsum dolor sit amet, cons ectetuer adipiscing elit, sed
+                                        diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                        aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+                                        consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                        wisi enim ad minim veniam, quis nostrud exerci tation
+                                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                        consequat. Duis autem vel eum iriure dolor in hendrerit in
+                                        vulputate velit esse molestie consequat, vel illum dolore eu
+                                        feugiat nulla facilisis at vero eros et accumsan et iusto
+                                        odio dignissim qui blandit praesent luptatum zzril delenit
+                                        augue duis dolore te feugait nulla facilisi. Lorem ipsum
+                                        dolor sit amet, cons ectetuer adipiscing elit, sed diam
+                                        nonummy nibh euismod tincidunt ut laoreet dolore magna
+                                        aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                        aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+                                        consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
+                                        wisi enim ad minim veniam, quis nostrud exerci tation
+                                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                        consequat. Duis autem vel eum iriure dolo
+                                    </p>
+                                    <p class="new-detail-desc">
+                                        in hendrerit in vulputate velit esse molestie consequat, vel
+                                        illum dolore eu feugiat nulla facilisis at vero eros et
+                                        accumsan et iusto odio dignissim qui blandit praesent
+                                        luptatum zzril delenit augue duis dolore te feugait nulla
+                                        facilisi. Lorem ipsum dolor sit amet, cons ectetuer
+                                        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                        minim veniam, quis nostrud exerci tation ullamcorper
+                                        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                        quis nostrud exerci tation ullamcorper suscipit lobortis
+                                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+                                        iriure dolor in hendrerit in vulputate velit esse molestie
+                                        consequat, vel illum dolore eu feugiat nulla facilisis at
+                                        vero eros et accumsan et iusto odio dignissim qui blandit
+                                        praesent luptatum zzril delenit augue duis dolore te feugait
+                                        nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer
+                                        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                        minim veniam, quis nostrud exerci tation ullamcorper
+                                        suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                        quis nostrud exerci tation ullamcorper suscipit lobortis
+                                        nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+                                        iriure dolor in hendrerit in vulputate velit esse molestie
+                                        consequat, vel illum dolore eu feugiat nulla facilisis at
+                                        vero eros et accumsan et iusto odio dignissim qui blandit
+                                        praesent luptatum zzril delenit augue duis dolore te feugait
+                                        nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer
+                                        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                        minim veniam, quis nostrud exerci tation ullamcorper
+                                        suscipit lobortis nisl ut aliquip ex ea commodo consequat
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4">
+                            <section class="new">
+                                <div class="container">
+                                    <div class="new-top">
+                                        <h2 class="heading new-heading">Bài viết phổ biến</h2>
+                                    </div>
+                                    <!-- End .new-top -->
+
+                                    <div class="new-list">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <!-- new item 1 -->
+                                                <div class="new-item">
+                                                    <a
+                                                        href="./new-detail.html"
+                                                        class="new-img-wrap"
+                                                    >
+                                                        <img
+                                                            src="./assets/images/new-1.png"
+                                                            alt=""
+                                                            class="new-img"
+                                                        />
+                                                    </a>
+
+                                                    <h3>
+                                                        <a
+                                                            href="./new-detail.html"
+                                                            class="new-title"
+                                                        >
+                                                            Cons ectetuer adipiscing elit, sed diam
+                                                            nonummy nibh
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <!-- new item 2 -->
+                                                <div class="new-item">
+                                                    <a
+                                                        href="./new-detail.html"
+                                                        class="new-img-wrap"
+                                                    >
+                                                        <img
+                                                            src="./assets/images/new-2.png"
+                                                            alt=""
+                                                            class="new-img"
+                                                        />
+                                                    </a>
+
+                                                    <h3>
+                                                        <a
+                                                            href="./new-detail.html"
+                                                            class="new-title"
+                                                        >
+                                                            Cons ectetuer adipiscing elit, sed diam
+                                                            nonummy nibh</a
+                                                        >
+                                                    </h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <!-- new-item 3 -->
+                                                <div class="new-item">
+                                                    <a
+                                                        href="./new-detail.html"
+                                                        class="new-img-wrap"
+                                                    >
+                                                        <img
+                                                            src="./assets/images/new-3.png"
+                                                            alt=""
+                                                            class="new-img"
+                                                        />
+                                                    </a>
+
+                                                    <h3>
+                                                        <a
+                                                            href="./new-detail.html"
+                                                            class="new-title"
+                                                        >
+                                                            Cons ectetuer adipiscing elit, sed diam
+                                                            nonummy nibh</a
+                                                        >
+                                                    </h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <!-- new-item 4 -->
+                                                <div class="new-item">
+                                                    <a
+                                                        href="./new-detail.html"
+                                                        class="new-img-wrap"
+                                                    >
+                                                        <img
+                                                            src="./assets/images/new-3.png"
+                                                            alt=""
+                                                            class="new-img"
+                                                        />
+                                                    </a>
+
+                                                    <h3>
+                                                        <a
+                                                            href="./new-detail.html"
+                                                            class="new-title"
+                                                        >
+                                                            Cons ectetuer adipiscing elit, sed diam
+                                                            nonummy nibh</a
+                                                        >
+                                                    </h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <!-- new-item 5 -->
+                                                <div class="new-item">
+                                                    <a
+                                                        href="./new-detail.html"
+                                                        class="new-img-wrap"
+                                                    >
+                                                        <img
+                                                            src="./assets/images/new-3.png"
+                                                            alt=""
+                                                            class="new-img"
+                                                        />
+                                                    </a>
+
+                                                    <h3>
+                                                        <a
+                                                            href="./new-detail.html"
+                                                            class="new-title"
+                                                        >
+                                                            Cons ectetuer adipiscing elit, sed diam
+                                                            nonummy nibh</a
+                                                        >
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End .new-list -->
+                                </div>
+                            </section>
+                            <!-- End .new -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End .new-detail -->
+
+            <footer class="footer">
+                <div class="container">
+                    <!-- row 1 -->
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="./" class="logo">
+                                <img src="./assets/images/footer-logo.svg" alt="GreenChop" />
+                            </a>
+                            <p class="footer-text">
+                                <span> GreenChop là bạn đồng hành</span> <br />
+                                của người tiêu dùng
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4 class="footer-title">Trang chủ</h4>
+                            <ul>
+                                <li>
+                                    <a href="./about.html" class="footer-link">Về greenchop</a>
+                                </li>
+                                <li>
+                                    <a href="./product.html" class="footer-link">Sản phẩm</a>
+                                </li>
+                                <li>
+                                    <a href="./new.html" class="footer-link">Tin tức</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4 class="footer-title footer-title-support">Hỗ trợ</h4>
+                            <p class="footer-desc">Đặt hàng trực tuyến (8h-22h)</p>
+                            <div class="footer-alarm">
+                                <img src="./assets/icons/alarm.svg" alt="" />
+                                <p class="footer-day">Thứ 2 - Thứ 6</p>
+                            </div>
+                            <a href="tel:091 1717 222" class="footer-phone">
+                                <img src="./assets/icons/phone_outline.svg" alt="" />
+                                091 1717 222
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <h4 class="footer-title footer-title-contact">Liên hệ</h4>
+                            <a href="mailto:greenchopvn@gmail.com" class="footer-email">
+                                <img src="./assets/icons/mail.svg" alt="" />
+                                greenchopvn@gmail.com
+                            </a>
+                            <p class="footer-home">
+                                <img src="./assets/icons/globe.svg" alt="" />
+                                Greenchop.vn
+                            </p>
+                            <div class="footer-location">
+                                <img src="./assets/icons/map-pin.svg" alt="" />
+                                <p class="footer-address">
+                                    428 Điện Biên Phủ, P11, <br />
+                                    Quận 10, TPHCM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-line"></div>
+
+                    <!-- row 2 -->
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-6">
+                            <img src="./assets/images/footer-img.svg" alt="" />
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="socials">
+                                <div class="social-bg">
+                                    <a href="#!" class="social-link">
+                                        <img src="./assets/icons/youtube.svg" alt="youtube" />
+                                    </a>
+                                </div>
+                                <div class="social-bg">
+                                    <a href="#!" class="social-link">
+                                        <img src="./assets/icons/facebook.svg" alt="facebook" />
+                                    </a>
+                                </div>
+                                <div class="social-bg">
+                                    <a href="#!" class="social-link">
+                                        <img src="./assets/icons/instagram.svg" alt="instagram" />
+                                    </a>
+                                </div>
+                                <div class="social-bg">
+                                    <a href="#!" class="social-link">
+                                        <img src="./assets/icons/twitter.svg" alt="twitter" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End .footer -->
+        </main>
+    </body>
+</html>

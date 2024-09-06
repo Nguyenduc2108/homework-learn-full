@@ -1,0 +1,132 @@
+@use "../abstracts";
+
+%margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    margin-top: 50px;
+    padding: 50px 0 0 0;
+
+    &-top {
+        text-align: center;
+    }
+
+    &-heading {
+        max-width: 50%;
+        @extend %margin-center;
+
+        @include abstracts.screen(lg) {
+            max-width: 70%;
+        }
+
+        @include abstracts.screen(md) {
+            max-width: 90%;
+        }
+    }
+
+    &-desc {
+        max-width: 52%;
+        @extend %margin-center;
+
+        @include abstracts.screen(lg) {
+            max-width: 70%;
+        }
+
+        @include abstracts.screen(md) {
+            max-width: 90%;
+        }
+    }
+
+    &-list {
+        position: relative;
+        padding: 100px 113px 114px;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 235px;
+            height: 235px;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+            background: #dcffca;
+        }
+
+        &::after {
+            bottom: 0;
+            right: 0;
+            background: #ffd5bd;
+        }
+
+        @include abstracts.screen(lg) {
+            padding: 70px 0 113px;
+        }
+    }
+
+    &-item {
+        border-radius: 3.333px;
+        background: var(--while-color);
+        box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+        padding: 33.33px 38.33px 58.83px 33.33px;
+
+        @include abstracts.screen(xl) {
+            padding: 16.33px 16.33px 41.83px 16.33px;
+        }
+
+        @include abstracts.screen(lg) {
+            margin-top: 30px;
+        }
+    }
+
+    &-img-bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 83.333px;
+        height: 83.333px;
+        border-radius: 10px;
+        background: #fff0e7;
+    }
+
+    &-item-large {
+        @extend .about-item;
+        padding: 60.33px 35px 86.33px 33.33px;
+
+        @include abstracts.screen(xl) {
+            padding: 23.33px 23.33px 59.83px 23.33px;
+        }
+
+        .about-img-bg {
+            background: #f2ffec;
+        }
+
+        .about-item-desc {
+            margin-top: 24.67px;
+        }
+    }
+
+    &-qty {
+        margin-top: 23.33px;
+        font-size: 4.3333rem;
+        font-weight: 800;
+    }
+
+    &-item-desc {
+        margin-top: 23.33px;
+        max-width: 86%;
+        font-size: 2rem;
+        line-height: 30.833px;
+
+        @include abstracts.screen(xl) {
+            max-width: 100%;
+            font-size: 1.5rem;
+        }
+    }
+}

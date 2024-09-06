@@ -1,0 +1,45 @@
+.contact-map {
+    margin-top: var(--header-height);
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    &-title {
+        font-size: 3.1667rem;
+        font-weight: 800;
+        line-height: 131.523%;
+    }
+
+    &-desc {
+        margin-top: 14.67px;
+        font-size: 1.6667rem;
+        font-weight: 600;
+        line-height: 21.667px;
+    }
+
+    &-list {
+        margin-top: 16.67px;
+    }
+
+    &-item {
+        display: flex;
+        align-items: start;
+
+        column-gap: 10px;
+        margin-top: 10px;
+
+        img {
+            width: 20px;
+        }
+
+        span {
+            font-size: 1.3333rem;
+            line-height: 20.417px;
+        }
+
+        .bold {
+            font-weight: 600;
+            line-height: 20px;
+        }
+    }
+}

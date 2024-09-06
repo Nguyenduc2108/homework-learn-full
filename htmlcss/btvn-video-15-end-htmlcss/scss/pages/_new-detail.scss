@@ -1,0 +1,126 @@
+@use "../abstracts";
+
+%flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.new-detail {
+    margin-top: 50px;
+
+    &-title {
+        max-width: 78%;
+        margin-bottom: 27.67px;
+        font-size: 4.3333rem;
+        font-weight: 800;
+
+        @include abstracts.screen(xl) {
+            max-width: 90%;
+            font-size: 3.6rem;
+        }
+
+        @include abstracts.screen(md) {
+            max-width: 100%;
+            font-size: 3.6rem;
+        }
+    }
+    &-info {
+        > img {
+            max-width: 757.5px;
+            max-height: 398.333px;
+            object-fit: cover;
+            border-radius: 6.667px;
+
+            @include abstracts.screen(xl) {
+                max-width: 90%;
+            }
+
+            @include abstracts.screen(md) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &-outstanding {
+        margin-top: 18.33px;
+        margin-bottom: 28.72px;
+        @extend %flex-center;
+        column-gap: 22.5px;
+
+        span {
+            color: var(--second-color);
+            font-size: 1.6667rem;
+            font-weight: 600;
+            line-height: 21.667px;
+        }
+    }
+
+    &-date {
+        @extend %flex-center;
+        column-gap: 12.32px;
+
+        > img {
+            width: 20.533px;
+            height: 20.533px;
+        }
+    }
+
+    &-time {
+        position: relative;
+        top: 1px;
+        color: #a3a3a3;
+        font-size: 1.848rem;
+        font-weight: 500;
+    }
+
+    &-desc {
+        max-width: 89.2%;
+        margin-bottom: 28.72px;
+        padding-right: 20.83px;
+        font-size: 1.3333rem;
+        line-height: 20.417px;
+
+        @include abstracts.screen(md) {
+            max-width: 100%;
+        }
+    }
+
+    .new {
+        margin-top: 0;
+        margin-bottom: 33.33px;
+        padding: 33.33px 33.33px 68.33px 34.17px;
+        background: rgb(255, 240, 231, 0.3);
+
+        &-img {
+            max-width: 321.667px;
+            max-height: 196.667px;
+            object-fit: cover;
+            border-radius: 6.667px;
+
+            @include abstracts.screen(xl) {
+                max-width: 100%;
+            }
+        }
+
+        &-heading {
+            margin-bottom: 6.67px;
+            text-align: left;
+            font-size: 2.3333rem;
+            font-weight: 600;
+            line-height: 26.667px;
+        }
+
+        &-item {
+            margin-top: 20px;
+            border-radius: 6.667px;
+            background: var(--while-color);
+        }
+
+        &-title {
+            margin-top: 20px;
+            padding: 0 10.83px 18.33px 27.5px;
+            font-size: 1.6667rem;
+            line-height: 21.667px;
+        }
+    }
+}

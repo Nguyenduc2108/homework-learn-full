@@ -1,0 +1,193 @@
+@use "../abstracts";
+
+.header {
+    background: var(--while-color);
+    box-shadow: var(--header-shadow);
+    padding-top: 19px;
+    max-height: var(--header-height);
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        margin-right: 9px;
+
+        @include abstracts.screen(lg) {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            bottom: 0;
+            z-index: 2;
+            width: 40%;
+            flex-direction: column;
+            background: var(--primary-color);
+            transition: left 0.3s;
+        }
+
+        @include abstracts.screen(sm) {
+            width: 70%;
+        }
+
+        a {
+            position: relative;
+            padding: 33px 25px 34px;
+            font-size: 1.6667rem;
+            font-weight: 600;
+            line-height: 1.3;
+
+            &:hover,
+            &.active {
+                color: var(--second-color);
+            }
+
+            &:hover::after,
+            &.active::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                translate: -50%;
+                width: 70%;
+                height: 1px;
+                background: var(--second-color);
+            }
+
+            @include abstracts.screen(lg) {
+                width: 100%;
+                margin-top: 30px;
+                padding: 15px 30px;
+                color: var(--while-color);
+
+                &:hover::after,
+                &.active::after {
+                    left: 0;
+                    translate: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @include abstracts.screen(lg) {
+        #toggle-menu:checked ~ .nav {
+            left: 0;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            transition-property: opacity, visibility;
+        }
+
+        #toggle-menu:checked ~ .overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .cart-btn {
+        position: relative;
+        display: inline-flex;
+        padding: 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        background: var(--while-color);
+
+        &:hover {
+            background-color: var(--second-color);
+            box-shadow: var(--cart-shadow);
+        }
+
+        &:hover .icon {
+            filter: brightness(0) saturate(100%) invert(79%) sepia(100%) saturate(0%)
+                hue-rotate(68deg) brightness(105%) contrast(107%);
+        }
+        .cart-qty {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 13.333px;
+            height: 13.333px;
+            border-radius: 50%;
+            background: var(--orange-700-color);
+            color: var(--while-color);
+            font-size: 1.0833rem;
+            font-weight: 500;
+            line-height: 20.417px;
+        }
+    }
+
+    .search-btn {
+        margin-left: 18px;
+        padding: 16px 0 16px 16px;
+        cursor: pointer;
+
+        @include abstracts.screen(sm) {
+            margin-left: 0;
+        }
+    }
+
+    #toggle-search:checked ~ .form-search {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+        top: 100%;
+    }
+
+    .form-search {
+        position: absolute;
+        top: 65%;
+        left: 0;
+        right: 0;
+        background: #f1f1f1;
+        box-shadow: var(--header-shadow);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        transition-property: top, opacity, visibility, z-index;
+
+        .search-input {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+
+    .menu-bar {
+        padding: 16px 0 16px 50px;
+        font-size: 28px;
+
+        @include abstracts.screen(sm) {
+            padding-left: 32px;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@use "../abstracts";
+
+.certificate {
+    margin-top: 95px;
+    padding: 0 200px;
+
+    @include abstracts.screen(xl) {
+        padding: 0 !important;
+    }
+
+    &-item {
+        display: flex;
+        column-gap: 15.83px;
+        margin-top: 38.83px;
+    }
+
+    &-img {
+        max-width: 55.833px;
+        max-height: 55.833px;
+        object-fit: contain;
+    }
+
+    &-title {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 26.667px;
+    }
+
+    &-desc {
+        max-width: 60%;
+        margin-top: 6.67px;
+        font-size: 1.7rem;
+        font-weight: 500;
+
+        @include abstracts.screen(xl) {
+            max-width: 90%;
+        }
+
+        @include abstracts.screen(md) {
+            max-width: 100%;
+        }
+    }
+}

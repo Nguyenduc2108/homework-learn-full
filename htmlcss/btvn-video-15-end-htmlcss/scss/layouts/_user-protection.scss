@@ -1,0 +1,128 @@
+@use "../abstracts";
+
+.user-protection {
+    position: relative;
+    margin-top: 100px;
+    padding-bottom: 120px;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 98vw;
+        height: 360.833px;
+        border-radius: 8.333px;
+        background: #fff0e7;
+
+        @include abstracts.screen(lg) {
+            width: 97.5vw;
+        }
+
+        @include abstracts.screen(md) {
+            width: 95vw;
+        }
+    }
+
+    &-top {
+        text-align: center;
+    }
+
+    &-heading {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include abstracts.screen(lg) {
+            width: 60%;
+        }
+
+        @include abstracts.screen(md) {
+            width: 80%;
+        }
+
+        @include abstracts.screen(sm) {
+            width: 100%;
+        }
+    }
+
+    &-desc {
+        width: 55%;
+        margin: 0 auto;
+
+        @include abstracts.screen(lg) {
+            width: 70%;
+        }
+        @include abstracts.screen(md) {
+            width: 100%;
+        }
+    }
+
+    &-list {
+        margin-top: 50px;
+
+        @include abstracts.screen(xl) {
+            margin-top: 20px;
+        }
+    }
+
+    &-item {
+        background: var(--while-color);
+        border-radius: 8.333px;
+
+        @include abstracts.screen(xl) {
+            margin-top: 30px;
+        }
+    }
+
+    &-img-wrap {
+        width: 345.833px;
+        height: 195px;
+    }
+
+    &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8.333px;
+    }
+
+    &-title {
+        display: block;
+        padding: 24.17px 27.5px 6.33px 38.33px;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 26.667px;
+        text-shadow: 0px 3.333px 3.333px rgba(0, 0, 0, 0.25);
+        color: #e05000;
+    }
+
+    &-item-desc {
+        max-width: 80%;
+        padding: 0 27.5px 0 38.33px;
+        color: #19191b;
+        line-height: 20.417px;
+    }
+
+    &-item-desc-full {
+        max-width: 100%;
+    }
+
+    .item-padding {
+        padding-bottom: 41px;
+
+        @include abstracts.screen(xl) {
+            padding-bottom: 60px;
+        }
+    }
+
+    .item-padding-last {
+        padding-bottom: 60px;
+
+        @include abstracts.screen(xl) {
+            padding-bottom: 100px;
+        }
+    }
+}

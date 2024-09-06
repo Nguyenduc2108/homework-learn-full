@@ -1,0 +1,119 @@
+@use "../abstracts";
+
+%flex-center {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.footer {
+    margin-top: 100px;
+    padding: 64px 0 26.67px;
+    background: #f2ffec;
+
+    @include abstracts.screen(md) {
+        text-align: center;
+    }
+
+    &-text {
+        margin-top: 24.58px;
+        font-size: 1.6rem;
+        line-height: 20.417px;
+
+        @include abstracts.screen(md) {
+            margin-bottom: 20px;
+        }
+
+        span {
+            font-size: 1.3333rem;
+        }
+    }
+    &-title {
+        margin-bottom: 13px;
+        color: var(--second-color);
+    }
+
+    li + li {
+        margin-top: 6.67px;
+    }
+
+    &-link:hover {
+        color: var(--second-color);
+    }
+
+    &-desc {
+        font-size: 1.6rem;
+        line-height: 20.417px;
+    }
+
+    &-alarm {
+        @extend %flex-center;
+        margin-top: 6.67px;
+
+        @include abstracts.screen(md) {
+            justify-content: center;
+        }
+    }
+
+    &-day {
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    &-phone {
+        @extend .footer-alarm;
+        @extend .footer-day;
+    }
+
+    &-email {
+        @extend .footer-alarm;
+    }
+
+    &-home {
+        @extend .footer-alarm;
+    }
+
+    &-location {
+        @extend .footer-alarm;
+        align-items: start;
+    }
+
+    &-line {
+        margin: 72.5px 0 24.17px;
+        width: 100%;
+        height: 1.667px;
+        background: #a3a3a3;
+    }
+
+    .socials {
+        @extend %flex-center;
+        justify-content: flex-end;
+        column-gap: 6.67px;
+
+        @include abstracts.screen(sm) {
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }
+
+    .social-bg {
+        @extend %flex-center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #dcffca;
+
+        &:hover {
+            background: var(--second-color);
+        }
+    }
+
+    @include abstracts.screen(lg) {
+        .footer-title-contact,
+        .footer-title-support {
+            margin-top: 30px;
+        }
+    }
+}

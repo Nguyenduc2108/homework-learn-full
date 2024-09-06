@@ -1,0 +1,98 @@
+@use "../abstracts";
+
+.contact {
+    &-title {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 26.667px;
+    }
+
+    &-form {
+        margin-top: 3.33px;
+
+        input::placeholder {
+            color: #a3a3a3;
+        }
+    }
+
+    .form-name {
+        width: 100%;
+        margin-top: 22.67px;
+        padding: 13.333px;
+        border-radius: 6.667px;
+        border: 0.833px solid #a3a3a3;
+        font-size: 1.6rem;
+    }
+
+    .form-email {
+        @extend .form-name;
+    }
+
+    .form-phone {
+        @extend .form-name;
+    }
+
+    .form-message {
+        @extend .form-name;
+        height: 150px;
+    }
+
+    .form-btn {
+        text-align: right;
+    }
+
+    .form-submit {
+        min-width: 105px;
+        margin-top: 26.5px;
+        padding: 13.333px 11.667px;
+        border-radius: 6.667px;
+        font-size: 1.6667rem;
+        font-weight: 700;
+        text-align: right;
+    }
+}
+
+.order-form {
+    margin-top: 42px;
+
+    .form-group {
+        position: relative;
+        margin-top: 13px;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            z-index: 2;
+            margin: 2px 4px;
+        }
+    }
+
+    input {
+        position: relative;
+        width: 60%;
+        padding: 12px 12px 12px 48px;
+        border-radius: 8px;
+        border: 1px solid #a3a3a3;
+
+        @include abstracts.screen(lg) {
+            width: 100%;
+        }
+
+        &::placeholder {
+            color: #a3a3a3;
+            line-height: 24.5px;
+        }
+    }
+
+    .form-btn {
+        margin: 24px 0 0 15px;
+        min-width: 154px;
+        padding: 16px 14px;
+        border-radius: 8px;
+        color: var(--White, #fff);
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}

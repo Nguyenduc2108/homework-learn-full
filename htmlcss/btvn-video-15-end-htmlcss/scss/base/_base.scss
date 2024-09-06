@@ -1,0 +1,75 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a,
+button,
+label {
+    -webkit-tap-highlight-color: transparent;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.icon {
+    filter: var(--icon-color);
+}
+
+.heading {
+    margin-bottom: 24.33px;
+    color: var(--primary-color);
+    font-size: 3.1667rem;
+    font-weight: 800;
+    line-height: 131.523%;
+}
+
+.desc {
+    color: var(--primary-color);
+    line-height: 20.417px;
+}
+
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}

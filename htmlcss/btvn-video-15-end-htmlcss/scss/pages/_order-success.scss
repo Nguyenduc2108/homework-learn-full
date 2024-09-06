@@ -1,0 +1,36 @@
+@use "../abstracts";
+
+.order-success {
+    &-img-wrap {
+        text-align: center;
+    }
+
+    &-content {
+        margin-top: 43px;
+        text-align: center;
+    }
+
+    &-title {
+        color: var(--second-color);
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+
+    &-text {
+        max-width: 40%;
+        margin: 25px auto 25px;
+        font-size: 2rem;
+        line-height: 26px;
+
+        @include abstracts.screen(xl) {
+            max-width: 55%;
+        }
+        @include abstracts.screen(lg) {
+            max-width: 65%;
+        }
+
+        @include abstracts.screen(md) {
+            max-width: 82%;
+        }
+    }
+}
