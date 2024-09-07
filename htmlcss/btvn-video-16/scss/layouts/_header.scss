@@ -1,0 +1,88 @@
+.header {
+    padding: 20px 0 52px 0;
+    border-bottom: 1px solid rgb($color: #fff, $alpha: 0.1);
+    .container {
+        max-width: 1320px;
+        padding: 0 20px;
+    }
+
+    &-inner {
+        @extend %flex-space-between;
+    }
+
+    .nav {
+        @extend %flex-center;
+
+        .logo {
+            display: none;
+        }
+        @include screen(lg) {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            bottom: 0;
+            z-index: 999;
+            background: #000000da;
+            width: 40%;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            transition: left 0.3s linear;
+
+            .logo {
+                display: block;
+                margin: 40px 0 40px 40px;
+            }
+        }
+
+        @include screen(sm) {
+            width: 70%;
+        }
+
+        &-link {
+            padding: 8px 17.5px;
+            font-weight: 500;
+
+            @include screen(lg) {
+                display: block;
+                width: 100%;
+                padding: 16px 40px;
+            }
+        }
+    }
+
+    #toggle-menu:checked ~ .nav {
+        left: 0;
+    }
+
+    .action {
+        @include screen(lg) {
+            margin-left: auto;
+        }
+    }
+
+    .menu {
+        margin-left: 30px;
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+
+        @include screen(lg) {
+            display: block;
+        }
+    }
+
+    .overlay {
+        display: none;
+        @include screen(lg) {
+            position: fixed;
+            inset: 0;
+            z-index: 99;
+            background: rgba($color: #000000, $alpha: 0.3);
+        }
+    }
+
+    #toggle-menu:checked ~ .overlay {
+        display: block;
+    }
+}

@@ -1,0 +1,52 @@
+@use "sass:math";
+
+$containerWidth: 1170px;
+$gridColumn: 12;
+$columnSpace: 30px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 math.div(-1 * $columnSpace, 2);
+}
+
+[class^="col-"] {
+    padding: 0 math.div(1 * $columnSpace, 2);
+}
+
+@mixin column($breakpoint: "") {
+    @for $i from 1 through $gridColumn {
+        $prefix: "";
+        @if $breakpoint != "" {
+            $prefix: $breakpoint + "-";
+        }
+
+        #{".col-" + $prefix + $i} {
+            flex-basis: math.div(100%, $gridColumn / $i);
+            max-width: math.div(100%, $gridColumn / $i);
+        }
+    }
+}
+
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+
+@include column();
+
+@each $breakpoint, $width in $breakpoints {
+    @media (min-width: $width) {
+        @include column($breakpoint);
+    }
+}

@@ -1,0 +1,108 @@
+.footer {
+    padding-bottom: 52px;
+    .row {
+        margin: 0;
+    }
+
+    .title {
+        margin-bottom: 14px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1;
+
+        @include screen(lg) {
+            margin-top: 40px;
+        }
+    }
+
+    &-link {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .desc {
+        padding-top: 10px;
+
+        @include screen(lg) {
+            max-width: 70%;
+        }
+
+        @include screen(md) {
+            max-width: 80%;
+        }
+
+        @include screen(sm) {
+            max-width: 90%;
+        }
+    }
+
+    &-form {
+        margin-top: 28px;
+
+        .row {
+            margin: 0 -15px;
+        }
+
+        input {
+            width: 93%;
+            padding: 0 10px 4px 0;
+            margin-top: 18px;
+            background: transparent;
+            border-bottom: 1px solid $textColor;
+            color: $whileColor;
+
+            ::placeholder {
+                font-size: 1.4rem;
+                line-height: 1;
+            }
+        }
+    }
+
+    .btn-footer {
+        min-width: 370px;
+        margin-top: 24px;
+        padding: 14px 40px;
+        background: $bgBtnColor;
+
+        @include screen(xl) {
+            min-width: 320px;
+        }
+
+        @include screen(lg) {
+            width: 93%;
+        }
+    }
+
+    .line {
+        display: block;
+        margin: 77px 0 52px;
+        width: 95%;
+        height: 1px;
+        background: $textColor;
+        opacity: 0.2;
+    }
+
+    .copy-right {
+        color: #e5e5e5;
+        line-height: 1;
+
+        @include screen(md) {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+
+    .socials {
+        @extend %flex-align;
+        gap: 34px;
+
+        @include screen(md) {
+            justify-content: center;
+        }
+    }
+
+    .social-link {
+        display: flex;
+        gap: 10px;
+    }
+}

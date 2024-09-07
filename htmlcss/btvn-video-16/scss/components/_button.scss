@@ -1,0 +1,40 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 176px;
+    padding: 20px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 99px;
+    color: $whileColor;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    &-register {
+        padding: 16px 30px;
+        background: rgba(255, 255, 255, 0.1);
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &-hero {
+        min-width: 181px;
+        font-weight: 700;
+
+        &.active {
+            background: #5162fe;
+        }
+    }
+
+    &-schedule {
+        min-width: 257px;
+        background: $bgBtnColor;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+}

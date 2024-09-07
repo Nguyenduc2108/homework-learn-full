@@ -1,0 +1,136 @@
+.schedule {
+    margin-bottom: 150px;
+
+    .row {
+        margin: 0;
+    }
+
+    &-desc {
+        max-width: 50%;
+        margin: 20px 0 34px;
+
+        @include screen(xl) {
+            max-width: 70%;
+        }
+    }
+
+    .dates {
+        @extend %flex-align;
+        gap: 60px;
+        padding-bottom: 21px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            left: 0;
+            bottom: 0;
+            width: 78%;
+            height: 3px;
+            opacity: 0.3;
+            border-radius: 99px;
+            background-color: $whileColor;
+        }
+
+        @include screen(lg) {
+            margin-top: 45px;
+        }
+    }
+
+    .date {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        &:hover::after,
+        &.active::after {
+            position: absolute;
+            content: "";
+            display: block;
+            left: 0;
+            bottom: -21px;
+            width: 140%;
+            height: 3px;
+            border-radius: 99px;
+            background-color: $whileColor;
+        }
+
+        &:hover,
+        &.active {
+            .day {
+                color: $whileColor;
+            }
+
+            .time {
+                @extend .day;
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+
+        @include screen(lg) {
+            justify-content: start;
+        }
+    }
+
+    .content-1 {
+        margin-top: 45px;
+    }
+
+    .hour {
+        flex-shrink: 0;
+    }
+
+    .dot {
+        flex-shrink: 0;
+        position: relative;
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin: 0 35px 0 39px;
+        border: 3px solid $yellowColor;
+        background: $bgColor;
+        border-radius: 50%;
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 3px;
+            height: 178px;
+            background-color: $yellowColor;
+            z-index: -1;
+
+            @include screen(sm) {
+                height: 230px;
+            }
+        }
+    }
+
+    .content-4 {
+        justify-content: start;
+    }
+
+    .content-4 .dot::after,
+    .content-5 .dot::after {
+        display: none;
+    }
+
+    .content-desc {
+        font-size: 14px;
+        line-height: 1.71;
+
+        @include screen(lg) {
+            max-width: 70%;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.feedback {
+    margin-bottom: 150px;
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .feedback-wrap {
+        position: relative;
+        display: flex;
+        gap: 300px;
+        padding: 78px 0 116px 100px;
+        border-radius: 18px;
+        background: $blackColor3;
+        overflow: hidden;
+    }
+
+    .item {
+        display: flex;
+        gap: 62px;
+
+        @include screen(lg) {
+            flex-direction: column;
+        }
+    }
+
+    .img-wrap {
+        position: relative;
+        flex-shrink: 0;
+        width: 338px;
+        height: 390px;
+        background: $redColor;
+        border-radius: 18px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .item-2 {
+        .img-wrap {
+            background: $yellowColor;
+        }
+    }
+
+    .item-info {
+        flex-shrink: 0;
+    }
+
+    .title {
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .item-sub-title {
+        position: relative;
+        margin-top: 10px;
+        font-weight: 500;
+        line-height: 1;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -16px;
+            left: 0;
+            width: 20%;
+            height: 0.8px;
+            background: $textColor;
+        }
+    }
+
+    .item-info-desc {
+        max-width: 21.7%;
+        margin-top: 47px;
+        color: #f0f0f0;
+
+        @include screen(lg) {
+            max-width: 100%;
+        }
+    }
+
+    .prev {
+        position: absolute;
+        top: 50%;
+        left: 100px;
+        transform: translateY(-50%);
+        @extend %flex-center;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background: rgba($color: $bgColor, $alpha: 0.15);
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            background: rgba($color: $bgColor, $alpha: 0.3);
+        }
+    }
+
+    .next {
+        @extend .prev;
+        left: unset;
+        right: 100px;
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 91px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+
+        &.active {
+            background: $whileColor;
+        }
+    }
+}

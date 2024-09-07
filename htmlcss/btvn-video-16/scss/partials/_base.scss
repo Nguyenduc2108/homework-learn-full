@@ -1,0 +1,111 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font;
+    font-size: $fontSize;
+    color: $textColor;
+    line-height: 1.625;
+    background-color: $bgColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $headingColor;
+}
+
+a {
+    text-decoration: none;
+    color: $linkColor;
+    line-height: 1;
+
+    &:hover,
+    &.active {
+        color: $whileColor;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+}
+
+button {
+    background: transparent;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.top {
+    text-align: center;
+}
+
+h2 {
+    font-size: 7.2rem;
+    font-weight: 700;
+    line-height: 1.05;
+    text-transform: capitalize;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@include screen(xxl) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+@include screen(lg) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@include screen(md) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@include screen(sm) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@include screen(xs) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}

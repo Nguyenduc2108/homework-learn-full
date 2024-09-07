@@ -1,0 +1,77 @@
+.remember {
+    margin: 150px 0;
+
+    .container {
+        max-width: 1140px;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    &-info {
+        margin-top: 33px;
+    }
+
+    .sub-heading {
+        margin: 38px 0 16px;
+        color: $whileColor;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    &-desc {
+        max-width: 88%;
+        margin-top: 16px;
+    }
+
+    &-wrap {
+        position: relative;
+        max-width: 570px;
+        max-height: 505px;
+
+        @include screen(lg) {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        > img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+    }
+
+    .time-wrap {
+        @extend %flex-center;
+        gap: 32px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 16px 25px 15px 24px;
+        border-radius: 0px 0px 0px 18px;
+        opacity: 0.45;
+        background: $bgColor;
+        backdrop-filter: blur(15px);
+    }
+
+    .time {
+        @extend %flex-align;
+        flex-direction: column;
+        gap: 8px;
+
+        &-number {
+            color: $whileColor;
+            font-size: 3.6rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        &-text {
+            color: $whileColor;
+            font-weight: 500;
+            line-height: 1;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.pricing {
+    margin-bottom: 150px;
+    .row {
+        margin: 0;
+    }
+
+    .list {
+        margin-top: 52px;
+    }
+
+    .item {
+        margin-top: 30px;
+        border-radius: 18px;
+        border: 1px solid $blackColor2;
+        background: $blackColor3;
+    }
+
+    .item-top {
+        border-radius: 18px 18px 0px 0px;
+        background: $bgColor;
+    }
+
+    .item-red {
+        .item-top {
+            background: $redColor;
+        }
+    }
+
+    .item-green {
+        .item-top {
+            background: $greenColor;
+        }
+    }
+
+    .item-title {
+        padding: 26px 0 7px 38px;
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: capitalize;
+    }
+
+    .item-price {
+        padding: 0 0 29px 38px;
+        color: $whileColor;
+    }
+
+    .item-body {
+        padding: 52px 32px 37px 0;
+    }
+
+    ul {
+        padding: 0 0 73px 38px;
+    }
+
+    li {
+        @extend %flex-align;
+        gap: 18px;
+        margin-top: 22px;
+    }
+
+    .btn-pricing {
+        @extend %flex-space-between;
+        min-width: 302px;
+        max-height: 51px;
+        margin-left: 36px;
+        background: $bgColor;
+
+        @include screen(xl) {
+            min-width: 240px;
+        }
+
+        @include screen(lg) {
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+}
